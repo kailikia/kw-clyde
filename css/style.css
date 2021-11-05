@@ -4414,7 +4414,6 @@ input[type="button"].btn-block {
 	padding-left: 0;
 	margin-bottom: 0;
 	list-style: none;
-
 }
 
 .nav-link {
@@ -11147,10 +11146,10 @@ h5,
 	z-index: 1;
 }
 .owl-carousel.home-slider .slider-item .slider-text h1 {
-	font-size: 55px;
+	font-size: 30px;
 	color: #000000;
 	line-height: 1.2;
-	font-weight: 800;
+	font-weight: 200;
 }
 .owl-carousel.home-slider .slider-item .slider-text h1 span {
 	font-weight: 800;
@@ -11404,23 +11403,24 @@ h5,
 	outline: none;
 }
 .btn.btn-primary {
-	background: #b1b493;
-	border: 1px solid #b1b493 !important;
-	color: #fff !important;
+	background: gold;
+	border: 1px solid gold !important;
+	color: black !important;
 }
 .btn.btn-primary:hover {
-	border: 1px solid #b1b493;
+	border: 1px solid gold;
+	background-color: white;
 	color: #b1b493;
 }
 .btn.btn-primary.btn-outline-primary {
-	border: 2px solid #b1b493 !important;
-	background: transparent !important;
-	color: #b1b493 !important;
+	border: 2px solid gold !important;
+	background: gold !important;
+	color: black !important;
 }
 .btn.btn-primary.btn-outline-primary:hover {
-	border: 2px solid transparent !important;
-	background: #b1b493 !important;
-	color: #fff !important;
+	border: 2px solid gold !important;
+	background: white !important;
+	color: black !important;
 }
 .btn.btn-secondary {
 	background: #a0f669 !important;
@@ -11443,14 +11443,14 @@ h5,
 	color: #fff;
 }
 .btn.btn-white {
-	background: #fff !important;
-	border: 1px solid #fff !important;
-	color: #b1b493 !important;
+	border: 1px solid gold !important;
+	background: gold !important;
+	color: black !important;
 }
 .btn.btn-white:hover {
 	border: 1px solid #000000;
-	background: #fff !important;
-	color: #fff;
+	background: white !important;
+	color: black;
 }
 .btn.btn-white.btn-outline-white {
 	border: 1px solid #fff;
@@ -11675,7 +11675,7 @@ h5,
 .ftco-hireme {
 	background: #b1b493;
 	padding: 0;
-  margin: 40px 0;
+	margin: 40px 0;
 	color: rgba(255, 255, 255, 0.9);
 }
 .ftco-hireme h2 {
