@@ -7211,6 +7211,7 @@ button.bg-dark:focus {
 	display: -webkit-box !important;
 	display: -ms-flexbox !important;
 	display: flex !important;
+
 }
 
 .d-inline-flex {
@@ -11850,6 +11851,7 @@ h5,
 	-moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
 	box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
 	border-radius: 5px;
+	height: 390px;
 }
 .testimony-wrap .user-img {
 	width: 80px;
