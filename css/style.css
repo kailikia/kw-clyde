@@ -8773,7 +8773,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-	padding-top: 3rem !important;
+	padding-top: rem !important;
 }
 
 .pr-5,
@@ -9495,7 +9495,7 @@ button.bg-dark:focus {
 	}
 	.pt-md-5,
 	.py-md-5 {
-		padding-top: 3rem !important;
+		padding-top: .5rem !important;
 	}
 	.pr-md-5,
 	.px-md-5 {
@@ -11013,7 +11013,7 @@ h5,
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 750px;
+	height: 600px;
 	position: relative;
 	z-index: 0;
 }
@@ -11041,7 +11041,7 @@ h5,
 	}
 }
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
-	width: 70%;
+	width: 80%;
 	position: relative;
 	height: 750px;
 	z-index: -1;
