@@ -12722,7 +12722,7 @@ textarea.form-control {
 
 /*  __________________ */
 .me-section{
-	margin-top: 200px;
+	margin-top: 160px;
 
 }
 .cont-flex{
@@ -12742,18 +12742,26 @@ margin-right: 25px;
 .text-div{
 	margin-left: 25px;
 }
+#btn-me:first-child{
+	margin-right: 7px;
+}
+
 #btn-me{
-	background: #f34236;
-    color: #ffffff;
-    border-color: #f34236;
+	background: gold;
+    color: black;
+    border-color: yellow;
     box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
 	
     text-align: center;
     border-radius: 3px;
 }
+#btn-me:hover{
+background-color: white;
+}
 
 #btn-me:focus{
 	background-color: black;
+	color: white;
 }
 .image-div img{
 	max-height: 80%;
@@ -12784,4 +12792,34 @@ transform: translateY(15%);
 }
 #image-id{
 	width: 150px;
+}
+.ftco-footer-social li a i{
+	position: absolute;
+	bottom: 30%;
+	left: 33%;
+
+}
+.icons{
+	display: flex;
+	justify-content: start;
+}
+
+.icons li{
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	margin: 5px;
+	border-radius: 4px;
+	color: white;
+	list-style: none;
+	position: relative;
+
+}
+
+
+.icons li i{
+	font-size: 15px;
+	position: absolute;
+	top: 12px;
+	left: 14px;
 }
