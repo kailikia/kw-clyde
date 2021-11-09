@@ -1176,6 +1176,7 @@ pre code {
 		-webkit-box-flex: 0;
 		-ms-flex: 0 0 25%;
 		flex: 0 0 25%;
+
 		max-width: 25%;
 	}
 	.col-md-4 {
@@ -11674,7 +11675,7 @@ h5,
 }
 
 .ftco-hireme {
-	background: #b1b493;
+	background: blue;
 	padding: 0;
 	margin: 40px 0;
 	color: rgba(255, 255, 255, 0.9);
@@ -12721,8 +12722,8 @@ textarea.form-control {
 
 /*  __________________ */
 .me-section{
-	margin-top: 60px;
-background-color: black;
+	margin-top: 200px;
+
 }
 .cont-flex{
 	display: flex;
@@ -12758,4 +12759,29 @@ margin-right: 25px;
 	max-height: 80%;
 	border: white 10px double;
 	    box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
+}
+
+.blue-cont{
+	
+	background-color: blue;
+	color: white;
+	line-height: 1.9rem;
+	padding: 45px 0;
+
+}
+.inner-blue-cont{
+	display: flex;
+	flex: 1;
+}
+.blue-text{
+	max-width: 60%;
+	margin-right: 40px;
+}
+.blue-image{
+	max-width: 40%;
+	margin-left: 50px;
+transform: translateY(15%);
+}
+#image-id{
+	width: 150px;
 }
