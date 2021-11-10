@@ -67,9 +67,7 @@ section {
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -10754,7 +10752,7 @@ h5,
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background: #b1b493;
+	background: blue;
 	visibility: visible;
 	-webkit-transform: scaleX(0);
 	-moz-transform: scaleX(0);
@@ -10813,8 +10811,12 @@ h5,
 .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active {
 	background: transparent;
 	background: none;
-	color: #b1b493;
+	color: blue;
 }
+.ftco-navbar-light .navbar-nav > .nav-item .nav-link:hover{
+	color: blue;
+}
+
 .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active span:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
@@ -10838,7 +10840,7 @@ h5,
 .ftco-navbar-light .navbar-toggler:hover,
 .ftco-navbar-light .navbar-toggler:focus {
 	text-decoration: none;
-	color: #b1b493;
+	color: #8e8f87;
 	outline: none !important;
 }
 .ftco-navbar-light.scrolled {
@@ -10909,9 +10911,9 @@ h5,
 }
 .ftco-navbar-light.scrolled.awake {
 	margin-top: 0px;
-	-webkit-transition: 0.3s all ease-out;
+	/* -webkit-transition: 0.s all ease-out;
 	-o-transition: 0.3s all ease-out;
-	transition: 0.3s all ease-out;
+	transition: 0.3s all ease-out; */
 }
 .ftco-navbar-light.scrolled.sleep {
 	-webkit-transition: 0.3s all ease-out;
@@ -12807,10 +12809,10 @@ transform: translateY(15%);
 .icons li{
 	width: 40px;
 	height: 40px;
-	background-color: black;
+	background-color: blue;
 	margin: 5px;
 	border-radius: 4px;
-	color: white;
+	/* color: rgb(161, 153, 153); */
 	list-style: none;
 	position: relative;
 
@@ -12822,4 +12824,161 @@ transform: translateY(15%);
 	position: absolute;
 	top: 12px;
 	left: 14px;
+	color: black;
+}
+
+.icons li:hover{
+	background-color: white;
+	border: 1px black solid;
+	transition: .4s ease-in-out;
+	color: yellow;
+	
+}
+
+/* loader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#loader-img {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    z-index: 1001;  
+    background-image: url('../Oneinmillionlogo_dark.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    z-index: 1020;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: red;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 1001;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: blue;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: yellow;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;  
+    background: #222;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.loader-section.section-left {
+    left: 0
+}
+
+.loader-section.section-right {
+    right: 0
+}
+
+.panel_left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+}
+
+.panel_right {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+}
+
+.loaded-circle {
+    opacity: 0;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.loaded-img {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all .3s 1s ease-out;
+    transition: all .3s 1s ease-out
+}
+
+/* achievements modifications */
+.give-50{
+	background-color: ;
+
+	padding-right: 20px;
+	min-width: 60%;
+
 }
