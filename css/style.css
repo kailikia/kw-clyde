@@ -4448,8 +4448,9 @@ nav ul li:hover > ul {
 	
 }
 nav ul li:hover > ul li{
-	margin-bottom: 2px;
-	background-color: red;
+	margin-bottom: 1px;
+	border-radius: 4px;
+	background-color: rgb(52, 74, 193);
 }
 nav ul li ul li a:hover{
 color: yellow;
@@ -13279,4 +13280,42 @@ justify-content: space-between;
 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 transition: .2s ease-in-out;
 cursor: pointer;
+background:rgb(253, 207, 43);
+transform: scale(101.5%);
+color: white;
+
+}
+
+
+.role-item{
+	width: 15em;
+	height: 9em;
+	text-align: center;
+	position: relative;
+	padding: 1.5em 1em;
+}
+.role-container{
+	max-width: 1300px;
+}
+.role-item:hover{
+	background:rgb(253, 207, 43);
+	color: white;
+	transform: scale(101.5%);
+}
+
+.leadership-row h2, .role-container h2{
+	text-align: center;
+	margin-bottom: 1em;
+}
+.role-item p span{
+	color: rgb(52, 74, 193);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.role-item:hover p span{
+	padding: 8px;
+	transition: .1s ease-in-out;
+	
 }
