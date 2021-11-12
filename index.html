@@ -80,21 +80,105 @@
 			text-align: center;
 			border-radius: 3px;
 		}
+
+		@media (max-width: 1199px) {
+			.image-div img {
+				margin: 0;
+				height: 40%;
+
+			}
+
+			.text-div {
+				margin-left: -40px;
+			}
+
+		}
+
+		@media (max-width: 991px) {
+			.cont-flex {
+				display: flex;
+				justify-content: center;
+			}
+
+			.image-div img {
+				margin: -43px;
+				margin-left: -10px;
+				height: auto;
+				margin-top: 1em;
+			}
+
+
+
+			.text-div {
+				margin-left: 20px;
+			}
+
+
+			@media (min-width: 520px) {
+				.image-div img {
+
+					margin-left: -56px;
+				}
+
+			}
+
+			@media (min-width: 490px) {
+				.image-div img {
+
+					margin-left: -40px;
+				}
+
+			}
+
+			@media (min-width: 768px) {
+				.image-div {
+					margin-left: 160px;
+				}
+
+			}
+
+			@media (min-width: 320px) {
+				body {
+					overflow-x: hidden;
+				}
+
+				.image-div img {
+
+					margin-left: -110px;
+					max-height: 39.5%;
+				}
+			}
+
+			@media (min-width: 370px) {
+
+				.image-div img {
+
+					margin-left: -90px;
+					/* max-height: 39.5%; */
+				}
+			}
+
+
+
+		}
 	</style>
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body id="home_page" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+	<nav style=" min-height : 100px "
+		class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
 		id="ftco-navbar">
 		<div class="container">
-			
-			<a class="navbar-brand" href="./index.html"><img style="margin-left: 10px; height: 80px;" src="./Symbol.png" alt="" srcset=""></a>
-			<button style="	color: black !important; font-weight: 700;" class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+
+			<a class="navbar-brand" href="./index.html"><img style="margin-left: 10px; height: 80px;" src="./Symbol.png"
+					alt="" srcset=""></a>
+			<button style="	color: black !important; font-weight: 700;"
+				class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span  class="oi oi-menu"></span> Menu
+				<span class="oi oi-menu"></span> Menu
 			</button>
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
@@ -108,14 +192,14 @@
 							<li><a href="./lions.html">Lions Club</a></li>
 							<li><a href="./kingsway.html">Kingsway</a></li>
 							<li><a href="./stJones.html">ST.Johns</a>
-					
+
 							</li>
 						</ul>
 					</li>
 					<li class="nav-item"><a href="./gallery.html" class="nav-link"><span>Gallery</span></a></li>
 					<li class="nav-item"><a href="./blog.html" class="nav-link"><span>Blog</span></a></li>
 					<li class="nav-item"><a href="./book.html" class="nav-link"><span>Book</span></a></li>
-							
+
 
 					<li class="nav-item"><a href="./contact.html" class="nav-link"><span>Contact</span></a></li>
 
@@ -137,8 +221,7 @@
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" ">
 							<div class="text">
-								<!-- <span style="font-size: 10x;" class="subheading">Hello! This is Clyde</span>
-								<h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1> -->
+								
 								<p>
 									<a href="#" class="btn btn-primary ">Hard Books</a>
 
@@ -152,27 +235,34 @@
 				</div>
 			</div>
 
-			<div class="slider-item">
+			
+		<!-- </div id="removesmall">  -->
+			<div class="slider-item ">
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third order-md-last img"
-							style="background-image:url(./Sliders/Quote\ 2.png); background-size: cover; background-repeat: no-repeat; ; ">
+					
+						<div class="one-third new-res remove-slider-item order-md-last img"
+							style="background-image:url(./Sliders/Quote\ 2.png); background-size: cover; background-repeat: no-repeat; border-left-width: 900px; ">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="">
+
+						<div class="one-forth  d-flex align-items-center ftco-animate" data-scrollax="">
 							<!-- <div class="text">
 								<span class="subheading">We Design &amp; Build Brands</span>
 								<h1 class="mb-4 mt-3">Hi, I am <span>Clyde</span> This is my favorite work.</h1>
-								<!-- <p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
+								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
 										class="btn btn-primary btn-outline-primary">Download CV</a></p> -->
-							</div> -->
 						</div>
 					</div>
 				</div>
 			</div>
+		<!-- </div> -->
+
+			</div>
+		</div>
 		</div>
 	</section>
 
@@ -188,16 +278,16 @@
 				</h1>
 				<!-- <h2>Hello! i'm Ma</h2> -->
 				<p>I have over 45 years of work experience and am recognized as an authority in transforming
-				loss-making institutions/companies and turning them into industry leaders, making them
-				profitable. Identified to stage historic comebacks in performance, employee engagement,
-				stakeholder mobilization including fundraising & investor buy-ins & building sustainable
-				business models. I repair broken morale and build collaborative & innovative work-forces
-				that are pivotal to businesses & organizations.</p>
-				
+					loss-making institutions/companies and turning them into industry leaders, making them
+					profitable. Identified to stage historic comebacks in performance, employee engagement,
+					stakeholder mobilization including fundraising & investor buy-ins & building sustainable
+					business models. I repair broken morale and build collaborative & innovative work-forces
+					that are pivotal to businesses & organizations.</p>
+
 				<div class="dutton-div">
 					<a href="./about.html" class="m-btn" id="btn-me">Read More...</a>
+				</div>
 			</div>
-		</div>
 	</section>
 
 	<section class="continer blue-cont">
@@ -220,15 +310,29 @@
 
 
 
+	<section style="margin-top: 4em; margin-bottom: 2em;">
+<div class="container" style="display: flex; flex-direction: column; justify-content: center ; margin: auto; ">
 
-	<!-- project -->
-	<section class="ftco-counter img bg-light" id="section-counter" style="display: flex; justify-content: center;"  >
 
-<!-- SnapWidget -->
-<!-- SnapWidget -->
-<iframe src="https://snapwidget.com/embed/972314" class="snapwidget-widget" allowtransparency="true" frameborder="0"
-	scrolling="no" style="border:none; overflow:hidden;  width:1000px; height:250px"></iframe>
+	<h3 style=" color: black; font-weight: 200; letter-spacing: 4px; text-align: center;">Insta(Connect)!!</h3><br>
+
+<div class="" style="display: flex; justify-content: center;">
+	<a  style=" max-width: 200px;" href="https://www.instagram.com/manojshah222/" class="m-btn" id="btn-me">Follow Me</a>
+
+</div>
+			
+</div>
+
+
+		<div class="ftco-counter img bg-light " id="section-counter" style="display: flex; justify-content: center;">
+
+			<!-- SnapWidget -->
+			<iframe src="https://snapwidget.com/embed/972314" class="snapwidget-widget" allowtransparency="true"
+				frameborder="0" scrolling="no"
+				style="border:none; overflow:hidden;  width:1000px; height:250px"></iframe>
+		</div>
 	</section>
+
 
 	<!-- end projects -->
 
@@ -239,9 +343,10 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2">Leader par excellence...</h2>
-						<p>Dr. Manoj Shah is someone who has redefined the achievement standards, yet what defines him is the admirable trait of utmost
-						humility and passion in every aspect of his multifarious life.
-</p>
+						<p>Dr. Manoj Shah is someone who has redefined the achievement standards, yet what defines him
+							is the admirable trait of utmost
+							humility and passion in every aspect of his multifarious life.
+						</p>
 						<p><a href="./about.html" class="btn btn-primary">More about Dr. Manoj Shah</a></p>
 					</div>
 				</div>
@@ -251,8 +356,9 @@
 						<ul class="list-unstyled">
 							<li><a href=""><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
 							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-							<li><a href="./affiliations.html"><span class="fa fa-chevron-right mr-2"></span>Affiliation</a></li>
-						
+							<li><a href="./affiliations.html"><span
+										class="fa fa-chevron-right mr-2"></span>Affiliation</a></li>
+
 							<li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Book</a></li>
 							<li><a href="./contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
 						</ul>
@@ -266,7 +372,7 @@
 							<ul>
 								<li><span class="icon fa fa-map marker"></span><span class="text">
 										Kingsway House ,7 University Way, Nairobi, Kenya</span></li>
-							
+
 								<li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span
 											class="text">oneinamillion@kingswaytyres.com</span></a></li>
 							</ul>
@@ -319,7 +425,32 @@
 			}
 		}
 	</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+<script>
+
+	jQuery(document).ready(function () {
+
+			//alert($('#home_page').width());
+
+			function ScreenResizeSmall() {
+				alert("Small Device");
+
+				$('section').removeClass('hero');
+			}
+
+
+			if ($('#home_page').width() < 756) {
+
+				ScreenResizeSmall();
+				//alert('small');
+
+			} else {
+		
+			}
+		});
+
+</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
 
@@ -341,7 +472,5 @@
 	<script src="js/main.js"></script>
 
 </body>
-
-<!-- Mirrored from technext.github.io/clyde/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Nov 2021 21:50:36 GMT -->
 
 </html>

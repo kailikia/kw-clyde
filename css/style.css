@@ -4448,6 +4448,7 @@ nav ul li:hover > ul {
 	
 }
 nav ul li:hover > ul li{
+	margin-left: 120px;
 	margin-bottom: 1px;
 	border-radius: 4px;
 	background-color: rgb(52, 74, 193);
@@ -4458,7 +4459,7 @@ color: yellow;
 	
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
+	max-width:170px;
 	float:none;
 	display:list-item;
 	position: relative;
@@ -10760,8 +10761,8 @@ h5,
 }
 @media (max-width: 991.98px) {
 	.ftco-navbar-light {
-		background: rgb(20, 21, 182) !important;
-		color: white;
+		background: transparent !important;
+		color: black;
 		position: relative;
 		top: 0;
 		padding-top: 0;
@@ -10847,7 +10848,7 @@ h5,
 		padding-right: 0;
 		padding-bottom: 1rem;
 		padding-top: 0;
-		color: #fff;
+		color: black;
 	}
 }
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
@@ -12235,7 +12236,7 @@ textarea.form-control {
 .ftco-counter {
 	overflow-x: hidden;
 	position: relative;
-	padding: 5em 0;
+	padding: 2em 0;
 }
 @media (max-width: 1199.98px) {
 	.ftco-counter {
