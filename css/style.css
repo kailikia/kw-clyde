@@ -12010,7 +12010,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-	padding: 2.9em 0;
+	/* padding: 2.9em 0; */
 	position: relative;
 }
 @media (max-width: 767.98px) {
@@ -13090,7 +13090,7 @@ textarea.form-control {
 
 /* achievements modifications */
 .give-50 {
-	background-color: ;
+	/* background-color: ; */
 
 	padding-right: 20px;
 	min-width: 60%;
@@ -13213,9 +13213,9 @@ textarea.form-control {
 	margin-top: 17rem;
 }
 .book-btns {
-	position: absolute;
-	left: 30%;
-	top: 20%;
+    position: absolute;
+    left: 40%;
+    top: 50%;
 }
 .book-btns > a {
 	padding: 15px 20px;
@@ -13250,32 +13250,31 @@ textarea.form-control {
 	max-width: 1200px;
 	margin: 5rem 1rem;
 }
-.leadership{
-	display: flex;
-	width: 100%;
-	padding: 0;
-	flex-wrap: wrap;
-	
+.leadership {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    min-width: 70em;
+    flex-wrap: wrap;
 }
 
-.leadership-item i{
- font-size: 25px;
- padding-top: 10px;
+.leadership-item img{
+width: 70px;
+height:  70px;
+margin: auto;
 }
 
-.leadership-item{
-	font-size: 15px;
-	width: 10em;
-
-	height: 8em;
-	margin: 5px 10px;
-	text-align: center;
-	border-radius: 5px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-
+.leadership-item {
+    font-size: 15px;
+    width: 11em;
+    height: 9em;
+    margin: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .leadership-item:hover{
 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;

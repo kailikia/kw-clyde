@@ -80,6 +80,106 @@
             text-align: center;
             border-radius: 3px;
         }
+        .nav-pill-main-div {
+    position: relative;
+    border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 100%;
+}
+ul.tabs{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	 ul.tabs li{
+		background: none;
+		color: #222;
+		display: inline-block;
+		padding: 10px 15px;
+		cursor: pointer;
+		transition: 0.3s ease all;
+     width: 33%;
+	}
+	ul.tabs li.current{
+		color: #222;
+		transition: 0.3s ease all;
+	}
+	ul.tabs li.current span{
+		color: rgb(52, 74, 193);
+		transition: 0.2s ease all;
+	}
+	.tab-content{
+		display: none;
+		padding: 15px;
+        height: 20em;
+		transition: 0.3s ease all;
+
+	}
+	.tab-content.current{
+		display: inherit;
+		transition: 0.3s ease all;
+	}
+
+
+	/*------ease effect------*/
+	.nav-justified > li { 
+		float: none; 
+	}
+	.nav-justified > li span { 
+		width: 100%; 
+	}
+	.customize_solution .nav-justified > li {
+    	float: none;
+	}
+	.customize_solution span.ease-effect { 
+		text-decoration: none; 
+		-webkit-transition: 0.3s all ease; 
+		transition: 0.3s ease all; 
+	}
+	.customize_solution span.ease-effect:hover, .customize_solution span.ease-effect:focus,.customize_solution ul.tabs li.current span:hover,.customize_solution ul.tabs li.current span:focus { 
+		color: #FFF; 
+		transition: 0.3s ease all; 
+	}
+	.customize_solution span.ease-effect { 
+		letter-spacing: 2px; 
+		text-transform: uppercase; 
+		display: inline-block; 
+		text-align: center; 
+		font-weight: bold; 
+		padding: 14px 0px; 
+		border-top-right-radius: 2px; 
+		border-top-left-radius: 2px; 
+		position: relative; 
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	}
+	.customize_solution .ease-effect:before { 
+		-webkit-transition: 0.5s all ease; 
+		transition: 0.5s all ease; 
+		position: absolute; 
+		top: 0; left: 50%; 
+		right: 50%; 
+		bottom: 0; 
+		opacity: 0; 
+		content: ''; 
+		background-color: rgb(253, 207, 43) !important; 
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+		z-index: -2; 
+	}
+	.customize_solution .ease-effect:hover:before, .customize_solution .ease-effect:focus:before { 
+		-webkit-transition: 0.5s all ease; 
+		transition: 0.5s all ease; 
+		left: 0; 
+		right: 0; 
+		opacity: 1; 
+	}
+
+.finbyz-icon {
+    height: 100px;
+    width: 100px;
+}
+html{
+    overflow-x: hidden;
+}
     </style>
 
 </head>
@@ -125,6 +225,14 @@
             </div>
         </div>
     </nav>
+
+  
+    
+ 
+
+
+
+
     <section class="hero-wrap hero-wrap-2" style="background-image: url('./Sliders/Smiley\ Shah.png');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
@@ -142,101 +250,226 @@
     </section>
 
 
-    <section class="ftco-section">
-        <div class="container">
-            <div class="leadership-row">
+    <div style="max-width: 1500px; width: 100%;" >
+        <div class="customize_solution pt-3">
+            <ul class="tabs nav nav-justified">
+                <li class="tab-link current nav-pill mt-2" href="tab-1">
+                    <span class="ease-effect">Leadership Values</span>
+                </li>
+                <li class="tab-link nav-pill mt-2" href="tab-2">
+                    <span class="ease-effect">Current Roles & Positions</span>
+                </li>
+                <li class="tab-link nav-pill mt-2" href="tab-3">
+                    <span class="ease-effect">Efficiency</span>
+                </li>
+            </ul>
+            <div class="tab-content current" id="tab-1">
              
-                    <h2 class="mb-3">Leadership Values</h2>
-                    <ul class="leadership">
-                        <div class="leadership-item">
-                            <i class="fas fa-dice-d20"></i>
-                            <p>Corporate Culture Change</p>
-                           
-                        </div>
-                        <div class="leadership-item">
-                            <i class="fas fa-users"></i>
-                            <p>Team Mentorship</p>
-                        </div>
-                        <div class="leadership-item">
-                            <i class="fas fa-handshake"></i>
-                            <p>Strategic Partnerships</p>
+                <p class="pb-20">
+                <section class="ftco-section">
+                    <div class="container">
+                        <div class="leadership-row">
+                
+                            <ul class="leadership">
+                                <div class="leadership-item">
+                                
+                                    <img src="./qualities/Org-Culture-Icon_small.png" alt="" srcset="">
+                                    <p>Corporate Culture Change</p>
+                
+                                </div>
+                                <div class="leadership-item">
+                                    <img src="./qualities/team.png" alt="" srcset="">
 
-                        </div>
-                        <div class="leadership-item">
-                            <i class="fas fa-tasks"></i>
-                            <p>Crisis Management</p>
-                        </div>
-                        <div class="leadership-item">
-                            <i class="fas fa-search-dollar"></i>
-                            <p>Fund Raising Mobilization</p>
-                        </div>
-                        <div class="leadership-item">
-                            <i class="fas fa-poll"></i>
-                            <p>Competitive Market Positioning</p>
-                        </div>
+                                    <p>Team Mentorship</p>
+                                </div>
+                                <div class="leadership-item">
+                                    <img src="./qualities/stretegicpartnership.png" alt="" srcset="">
+   
+                                    <p>Strategic Partnerships</p>
+                
+                                </div>
+                                <div class="leadership-item">
+                                    <img src="./qualities/crisis_new.png" alt="" srcset="">
 
-                    </ul>
-                    </div>
-                    </div>
-                    <div class="container role-container">
-
-                   
-                    <h2>Current Roles & Positions</h2>
-                    <ul class="leadership">
-                        <div class="leadership-item role-item">
-                            
-                            <p>  M.P. Shah Hospital (Social Service League) <span>
-                                - Chairman Since 2011
-                            </span>  </p>
-                    <p></p>
-                        </div>
-                        <div class="leadership-item role-item">
-                     <p>The Lions Sightfirst Eye Hospital <span>-Vice-chairman Since 2013</span></p>
-                            
-                        </div>
-                        <div class="leadership-item role-item">
-                          <p>Automobile Association of Kenya (AA) <span>- Governing council member Since 2008</span></p>
-                            
+                                    <p>Crisis Management</p>
+                                </div>
+                                <div class="leadership-item">
+           <img src="./qualities/fundraising_small.png" alt="" srcset="">
+                                    <p>Fund Raising Mobilization</p>
+                                </div>
+                                <div class="leadership-item">
+                                    <img src="./qualities/compmarketnew_small-1.png" alt="" srcset="">
                     
+                                    <p>Competitive Market Positioning</p>
+                                </div>
+                
+                            </ul>
                         </div>
-                        <div class="leadership-item role-item">
-                         <p>ICONIC Toastmasters Club <span>- Current President</span></p>
-                           
-                        </div>
-                        <div class="leadership-item role-item">
-                     <p>The St. John’s Ambulance Priory Council <span>- Board Member</span></p>
-                           
-                        </div>
-                   
-                    
-                    </ul>
-                    <div class="Honorary">
-                         
-                         
-                        
-                        
-                        
-
                     </div>
-                    <!-- <div class="Director">
-                        Kingsway Tyres Ltd
-                        Kingsway Investments Ltd
-                        Kingsway Properties Ltd
-                        Creative Innovations Ltd
-                        Growth Management Ltd
-                        Tribe Hotels Limited
-                        Greenhills Investment Ltd (Village Market Group)
-                    </div>
-                    <div class="Humanitarian">
-                        1. Lions Club International Foundation - Trustee 2020-2023
-                        2. Member of the Lead Gift Committee, Campaign 100 - Member 2019-2022
-                        3. Kingsway Foundation - Chairman- Since 2012
-
-                    </div> -->
-                </div>
          
+                
+                
+                </section>
+                </p>
+            </div>
+            <div class="tab-content" id="tab-2">
+             
+                <p class="pb-20">
+                            <div class="container role-container">
+                            
+                            
+                                
+                                <ul class="leadership">
+                                    <div class="leadership-item role-item">
+                            
+                                        <p> M.P. Shah Hospital (Social Service League) <span>
+                                                - Chairman Since 2011
+                                            </span> </p>
+                                        <p></p>
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>The Lions Sightfirst Eye Hospital <span>-Vice-chairman Since 2013</span></p>
+                            
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>Automobile Association of Kenya (AA) <span>- Governing council member Since 2008</span></p>
+                            
+                            
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>ICONIC Toastmasters Club <span>- Current President</span></p>
+                            
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>The St. John’s Ambulance Priory Council <span>- Board Member</span></p>
+                            
+                                    </div>
+                            
+                            
+                                </ul>
+                                <div class="Honorary">
+                            
+                            
+                            
+                            
+                            
+                            
+                                </div>
+                  
+                            </div>
+                </p>
+            </div>
+            <div class="tab-content" id="tab-2">
+             
+                <p class="pb-20">
+                            <div class="container role-container">
+                            
+                            
+                                
+                                <ul class="leadership">
+                                    <div class="leadership-item role-item">
+                            
+                                        <p> M.P. Shah Hospital (Social Service League) <span>
+                                                - Chairman Since 2011
+                                            </span> </p>
+                                        <p></p>
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>The Lions Sightfirst Eye Hospital <span>-Vice-chairman Since 2013</span></p>
+                            
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>Automobile Association of Kenya (AA) <span>- Governing council member Since 2008</span></p>
+                            
+                            
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>ICONIC Toastmasters Club <span>- Current President</span></p>
+                            
+                                    </div>
+                                    <div class="leadership-item role-item">
+                                        <p>The St. John’s Ambulance Priory Council <span>- Board Member</span></p>
+                            
+                                    </div>
+                            
+                            
+                                </ul>
+                                <div class="Honorary">
+                            
+                            
+                            
+                            
+                            
+                            
+                                </div>
+                                <!-- <div class="Director">
+                                                                    Kingsway Tyres Ltd
+                                                                    Kingsway Investments Ltd
+                                                                    Kingsway Properties Ltd
+                                                                    Creative Innovations Ltd
+                                                                    Growth Management Ltd
+                                                                    Tribe Hotels Limited
+                                                                    Greenhills Investment Ltd (Village Market Group)
+                                                                </div>
+                                                                <div class="Humanitarian">
+                                                                    1. Lions Club International Foundation - Trustee 2020-2023
+                                                                    2. Member of the Lead Gift Committee, Campaign 100 - Member 2019-2022
+                                                                    3. Kingsway Foundation - Chairman- Since 2012
+                                            
+                                                                </div> -->
+                            </div>
+                </p>
+            </div>
+            <div class="tab-content" id="tab-3">
+             
+                <p class="pb-20">
+                <div class="container role-container">
+                
+                
+                
+                    <ul class="leadership">
+                        <div class="leadership-item role-item">
+                
+                            <p> Kingsway Tyres Ltd</p>
+                            <p></p>
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Kingsway Investments Ltd</p>
+                
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Kingsway Properties Ltd</p>
+                
+                
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Creative Innovations Ltd</p>
+                
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Growth Management Ltd</p>
+                
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Tribe Hotels Limited</p>
+                
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Greenhills Investment Ltd (Village Market Group)</p>
+                
+                        </div>
+                
+                
+                    </ul>
+          
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
 
-    </section> <!-- .section -->
+
+    <!-- .section -->
     <section class="ftco-section testimony-section bg-primary">
         <div class="container">
             <div class="row justify-content-center pb-5">
@@ -446,6 +679,7 @@
         <div id="panel_left" class='loader-section section-left'></div>
         <div id="panel_right" class='loader-section section-right'></div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         document.onreadystatechange = function () {
             if (document.readyState === "complete") {
@@ -456,6 +690,18 @@
                 $("#preloader").addClass("loaded-img");
             }
         }
+    </script>
+
+    <script>
+        $('ul.tabs li').click(function () {
+                var tab_id = $(this).attr('href');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
