@@ -36,6 +36,7 @@
             -ms-flex-align: center !important;
             align-items: center !important;
             display: flex;
+            
         }
 
         .container {
@@ -44,6 +45,7 @@
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
+            flex-wrap: wrap;
         }
 
         .imgx {
@@ -80,106 +82,154 @@
             text-align: center;
             border-radius: 3px;
         }
+
         .nav-pill-main-div {
-    position: relative;
-    border-radius: 20px;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    height: 100%;
+            position: relative;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            height: 100%;
+        }
+
+        ul.tabs {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        ul.tabs li {
+            background: none;
+            color: #222;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: 0.3s ease all;
+            width: 33%;
+        }
+
+        ul.tabs li.current {
+            color: #222;
+            transition: 0.3s ease all;
+        }
+
+        ul.tabs li.current span {
+            color: rgb(52, 74, 193);
+            transition: 0.2s ease all;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 15px;
+
+            transition: 0.3s ease all;
+
+        }
+
+        .tab-content.current {
+            display: inherit;
+            transition: 0.3s ease all;
+        }
+
+
+        /*------ease effect------*/
+        .nav-justified>li {
+            float: none;
+        }
+
+        .nav-justified>li span {
+            width: 100%;
+        }
+
+        .customize_solution .nav-justified>li {
+            float: none;
+        }
+
+        .customize_solution span.ease-effect {
+            text-decoration: none;
+            -webkit-transition: 0.3s all ease;
+            transition: 0.3s ease all;
+        }
+
+        .customize_solution span.ease-effect:hover,
+        .customize_solution span.ease-effect:focus,
+        .customize_solution ul.tabs li.current span:hover,
+        .customize_solution ul.tabs li.current span:focus {
+            color: #FFF;
+            transition: 0.3s ease all;
+        }
+
+        .customize_solution span.ease-effect {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 14px 0px;
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        .customize_solution .ease-effect:before {
+            -webkit-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: rgb(253, 207, 43) !important;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            z-index: -2;
+        }
+
+        .customize_solution .ease-effect:hover:before,
+        .customize_solution .ease-effect:focus:before {
+            -webkit-transition: 0.5s all ease;
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+
+        .finbyz-icon {
+            height: 100px;
+            width: 100px;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        @media (max-width: 772px) {
+            .ftco-section {
+                padding: 0;
+            }
+
+            .leadership {
+                display: flex;
+                width: 100%;
+                padding: 0;
+                max-width: 70em;
+                flex-wrap: wrap;
+            }
+            .rm-padding{
+                padding: 0;
+                margin-right: 0;
+            }
+@media (max-width: 431px){
+.leadership-item {
+
+    width: 100%;
+    height: 11em;
+
 }
-ul.tabs{
-		margin: 0px;
-		padding: 0px;
-		list-style: none;
-	}
-	 ul.tabs li{
-		background: none;
-		color: #222;
-		display: inline-block;
-		padding: 10px 15px;
-		cursor: pointer;
-		transition: 0.3s ease all;
-     width: 33%;
-	}
-	ul.tabs li.current{
-		color: #222;
-		transition: 0.3s ease all;
-	}
-	ul.tabs li.current span{
-		color: rgb(52, 74, 193);
-		transition: 0.2s ease all;
-	}
-	.tab-content{
-		display: none;
-		padding: 15px;
-        height: 20em;
-		transition: 0.3s ease all;
-
-	}
-	.tab-content.current{
-		display: inherit;
-		transition: 0.3s ease all;
-	}
-
-
-	/*------ease effect------*/
-	.nav-justified > li { 
-		float: none; 
-	}
-	.nav-justified > li span { 
-		width: 100%; 
-	}
-	.customize_solution .nav-justified > li {
-    	float: none;
-	}
-	.customize_solution span.ease-effect { 
-		text-decoration: none; 
-		-webkit-transition: 0.3s all ease; 
-		transition: 0.3s ease all; 
-	}
-	.customize_solution span.ease-effect:hover, .customize_solution span.ease-effect:focus,.customize_solution ul.tabs li.current span:hover,.customize_solution ul.tabs li.current span:focus { 
-		color: #FFF; 
-		transition: 0.3s ease all; 
-	}
-	.customize_solution span.ease-effect { 
-		letter-spacing: 2px; 
-		text-transform: uppercase; 
-		display: inline-block; 
-		text-align: center; 
-		font-weight: bold; 
-		padding: 14px 0px; 
-		border-top-right-radius: 2px; 
-		border-top-left-radius: 2px; 
-		position: relative; 
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-	}
-	.customize_solution .ease-effect:before { 
-		-webkit-transition: 0.5s all ease; 
-		transition: 0.5s all ease; 
-		position: absolute; 
-		top: 0; left: 50%; 
-		right: 50%; 
-		bottom: 0; 
-		opacity: 0; 
-		content: ''; 
-		background-color: rgb(253, 207, 43) !important; 
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-		z-index: -2; 
-	}
-	.customize_solution .ease-effect:hover:before, .customize_solution .ease-effect:focus:before { 
-		-webkit-transition: 0.5s all ease; 
-		transition: 0.5s all ease; 
-		left: 0; 
-		right: 0; 
-		opacity: 1; 
-	}
-
-.finbyz-icon {
-    height: 100px;
-    width: 100px;
 }
-html{
-    overflow-x: hidden;
-}
+            
+
+        }
     </style>
 
 </head>
@@ -187,7 +237,8 @@ html{
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+    <nav style=" min-height : 100px "
+        class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
         id="ftco-navbar">
         <div class="container">
 
@@ -214,8 +265,8 @@ html{
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="./gallery.html" class="nav-link"><span>Gallery</span></a></li>
-                
+                    <li class="nav-item"><a href="./gallery.html" class="nav-link"><span>Media</span></a></li>
+     
                     <li class="nav-item"><a href="./book.html" class="nav-link"><span>Book</span></a></li>
 
 
@@ -226,9 +277,8 @@ html{
         </div>
     </nav>
 
-  
-    
- 
+
+
 
 
 
@@ -250,7 +300,7 @@ html{
     </section>
 
 
-    <div style="max-width: 1500px; width: 100%;" >
+    <div style="max-width: 1500px; width: 100%;">
         <div class="customize_solution pt-3">
             <ul class="tabs nav nav-justified">
                 <li class="tab-link current nav-pill mt-2" href="tab-1">
@@ -264,18 +314,18 @@ html{
                 </li>
             </ul>
             <div class="tab-content current" id="tab-1">
-             
+
                 <p class="pb-20">
-                <section class="ftco-section">
-                    <div class="container">
+                <section class="ftco-section rm-padding">
+                  
                         <div class="leadership-row">
-                
+
                             <ul class="leadership">
                                 <div class="leadership-item">
-                                
+
                                     <img src="./qualities/Org-Culture-Icon_small.png" alt="" srcset="">
                                     <p>Corporate Culture Change</p>
-                
+
                                 </div>
                                 <div class="leadership-item">
                                     <img src="./qualities/team.png" alt="" srcset="">
@@ -284,9 +334,9 @@ html{
                                 </div>
                                 <div class="leadership-item">
                                     <img src="./qualities/stretegicpartnership.png" alt="" srcset="">
-   
+
                                     <p>Strategic Partnerships</p>
-                
+
                                 </div>
                                 <div class="leadership-item">
                                     <img src="./qualities/crisis_new.png" alt="" srcset="">
@@ -294,115 +344,117 @@ html{
                                     <p>Crisis Management</p>
                                 </div>
                                 <div class="leadership-item">
-           <img src="./qualities/fundraising_small.png" alt="" srcset="">
+                                    <img src="./qualities/fundraising_small.png" alt="" srcset="">
                                     <p>Fund Raising Mobilization</p>
                                 </div>
                                 <div class="leadership-item">
                                     <img src="./qualities/compmarketnew_small-1.png" alt="" srcset="">
-                    
+
                                     <p>Competitive Market Positioning</p>
                                 </div>
-                
+
                             </ul>
                         </div>
-                    </div>
-         
-                
-                
+              
+
+
+
                 </section>
                 </p>
             </div>
             <div class="tab-content" id="tab-2">
-             
+
                 <p class="pb-20">
-                            <div class="container role-container">
-                            
-                            
-                                
-                                <ul class="leadership">
-                                    <div class="leadership-item role-item">
-                            
-                                        <p> M.P. Shah Hospital (Social Service League) <span>
-                                                - Chairman Since 2011
-                                            </span> </p>
-                                        <p></p>
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>The Lions Sightfirst Eye Hospital <span>-Vice-chairman Since 2013</span></p>
-                            
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>Automobile Association of Kenya (AA) <span>- Governing council member Since 2008</span></p>
-                            
-                            
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>ICONIC Toastmasters Club <span>- Current President</span></p>
-                            
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>The St. John’s Ambulance Priory Council <span>- Board Member</span></p>
-                            
-                                    </div>
-                            
-                            
-                                </ul>
-                                <div class="Honorary">
-                            
-                            
-                            
-                            
-                            
-                            
-                                </div>
-                  
-                            </div>
+                <div class="container role-container">
+
+
+
+                    <ul class="leadership">
+                        <div class="leadership-item role-item">
+
+                            <p> M.P. Shah Hospital (Social Service League) <span>
+                                    - Chairman Since 2011
+                                </span> </p>
+                            <p></p>
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>The Lions Sightfirst Eye Hospital <span>-Vice-chairman Since 2013</span></p>
+
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Automobile Association of Kenya (AA) <span>- Governing council member Since 2008</span>
+                            </p>
+
+
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>ICONIC Toastmasters Club <span>- Current President</span></p>
+
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>The St. John’s Ambulance Priory Council <span>- Board Member</span></p>
+
+                        </div>
+
+
+                    </ul>
+                    <div class="Honorary">
+
+
+
+
+
+
+                    </div>
+
+                </div>
                 </p>
             </div>
             <div class="tab-content" id="tab-2">
-             
+
                 <p class="pb-20">
-                            <div class="container role-container">
-                            
-                            
-                                
-                                <ul class="leadership">
-                                    <div class="leadership-item role-item">
-                            
-                                        <p> M.P. Shah Hospital (Social Service League) <span>
-                                                - Chairman Since 2011
-                                            </span> </p>
-                                        <p></p>
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>The Lions Sightfirst Eye Hospital <span>-Vice-chairman Since 2013</span></p>
-                            
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>Automobile Association of Kenya (AA) <span>- Governing council member Since 2008</span></p>
-                            
-                            
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>ICONIC Toastmasters Club <span>- Current President</span></p>
-                            
-                                    </div>
-                                    <div class="leadership-item role-item">
-                                        <p>The St. John’s Ambulance Priory Council <span>- Board Member</span></p>
-                            
-                                    </div>
-                            
-                            
-                                </ul>
-                                <div class="Honorary">
-                            
-                            
-                            
-                            
-                            
-                            
-                                </div>
-                                <!-- <div class="Director">
+                <div class="container role-container">
+
+
+
+                    <ul class="leadership">
+                        <div class="leadership-item role-item">
+
+                            <p> M.P. Shah Hospital (Social Service League) <span>
+                                    - Chairman Since 2011
+                                </span> </p>
+                            <p></p>
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>The Lions Sightfirst Eye Hospital <span>-Vice-chairman Since 2013</span></p>
+
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>Automobile Association of Kenya (AA) <span>- Governing council member Since 2008</span>
+                            </p>
+
+
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>ICONIC Toastmasters Club <span>- Current President</span></p>
+
+                        </div>
+                        <div class="leadership-item role-item">
+                            <p>The St. John’s Ambulance Priory Council <span>- Board Member</span></p>
+
+                        </div>
+
+
+                    </ul>
+                    <div class="Honorary">
+
+
+
+
+
+
+                    </div>
+                    <!-- <div class="Director">
                                                                     Kingsway Tyres Ltd
                                                                     Kingsway Investments Ltd
                                                                     Kingsway Properties Ltd
@@ -417,51 +469,51 @@ html{
                                                                     3. Kingsway Foundation - Chairman- Since 2012
                                             
                                                                 </div> -->
-                            </div>
+                </div>
                 </p>
             </div>
             <div class="tab-content" id="tab-3">
-             
+
                 <p class="pb-20">
                 <div class="container role-container">
-                
-                
-                
+
+
+
                     <ul class="leadership">
                         <div class="leadership-item role-item">
-                
+
                             <p> Kingsway Tyres Ltd</p>
                             <p></p>
                         </div>
                         <div class="leadership-item role-item">
                             <p>Kingsway Investments Ltd</p>
-                
+
                         </div>
                         <div class="leadership-item role-item">
                             <p>Kingsway Properties Ltd</p>
-                
-                
+
+
                         </div>
                         <div class="leadership-item role-item">
                             <p>Creative Innovations Ltd</p>
-                
+
                         </div>
                         <div class="leadership-item role-item">
                             <p>Growth Management Ltd</p>
-                
+
                         </div>
                         <div class="leadership-item role-item">
                             <p>Tribe Hotels Limited</p>
-                
+
                         </div>
                         <div class="leadership-item role-item">
                             <p>Greenhills Investment Ltd (Village Market Group)</p>
-                
+
                         </div>
-                
-                
+
+
                     </ul>
-          
+
                 </div>
                 </p>
             </div>
@@ -694,14 +746,14 @@ html{
 
     <script>
         $('ul.tabs li').click(function () {
-                var tab_id = $(this).attr('href');
+            var tab_id = $(this).attr('href');
 
-                $('ul.tabs li').removeClass('current');
-                $('.tab-content').removeClass('current');
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
 
-                $(this).addClass('current');
-                $("#" + tab_id).addClass('current');
-            })
+            $(this).addClass('current');
+            $("#" + tab_id).addClass('current');
+        })
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
