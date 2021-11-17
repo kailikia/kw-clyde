@@ -81,6 +81,32 @@
 			border-radius: 3px;
 		}
 
+
+
+		.sponsors ul {
+			display: block;
+			list-style: none none;
+			text-align: center;
+			margin: 1em;
+			padding: 0;
+		}
+
+		.sponsors li {
+			display: inline-block;
+			/* width: 10em; */
+			/* height: 96px; */
+			clear: none;
+			margin: 16px;
+
+		}
+
+		.sponsors img {
+			width: 150px;
+			height: 150px;
+		}
+
+
+
 		@media (max-width: 1199px) {
 			.image-div img {
 				margin: 0;
@@ -112,6 +138,9 @@
 			.text-div {
 				margin-left: 20px;
 			}
+
+			/* slider */
+
 
 
 			@media (min-width: 520px) {
@@ -168,8 +197,7 @@
 <body id="home_page" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-	<nav  
-		class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
 		id="ftco-navbar">
 		<div class="container" style=" min-height : 100% ; min-width: 100%;">
 
@@ -184,24 +212,50 @@
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
 					<li s class="nav-item"><a href="./index.html" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="./about.html" class="nav-link"><span>About</span></a></li>
-					<!-- <li class="nav-item"><a href="./affiliations.html" class="nav-link"><span>Affiliations</span></a>
-					</li> -->
-					<li class="nav-item"><a class="nav-link" href="#">Affiliations</a>
+
+					<li class="nav-item"><a class="nav-link" href="#">About</a>
 						<ul class="color">
-							<li><a href="./lions.html">Lions Club</a></li>
-							<li><a href="./kingsway.html">Kingsway</a></li>
-							<li><a href="./stJones.html">ST.Johns</a>
+							<li><a href="./about.html">About Dr.Manoj</a></li>
+							<li><a href="./lions.html">Lions bio</a></li>
 
-							</li>
-						</ul>
+
 					</li>
-					<li class="nav-item"><a href="./gallery.html" class="nav-link"><span>Media</span></a></li>
-					
-					<li class="nav-item"><a href="./book.html" class="nav-link"><span>Book</span></a></li>
+				</ul>
+				<!-- <li class="nav-item"><a href="./affiliations.html" class="nav-link"><span>Affiliations</span></a>
+					</li> -->
+				<li class="nav-item"><a class="nav-link" href="#">Affiliations</a>
+					<ul class="color">
+						<li><a href="./kingsway.html">Kingsway Group</a></li>
+						<li><a href="./mpShah.html">MP Shah</a></li>
+						<li><a href="./lions.html">Lions SightFirst Eye Hospital</a></li>
+						<li><a href="./stJones.html">St.Johns</a>
+						<li><a href="./AAKenya.html">AA Kenya</a>
+						<li><a href="./kilimanjaroTrust.html">kilimanjaro blind trust</a>
+						<li><a href="#">others...</a>
+
+						</li>
+					</ul>
+				</li>
 
 
-					<li class="nav-item"><a href="./contact.html" class="nav-link"><span>Contact</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Book</a>
+					<ul class="color">
+						<li><a href="./book.html">One In A Million</a></li>
+						<li><a href="./author.html">About the author</a></li>
+					</ul>
+
+				</li>
+				<li class="nav-item"><a class="nav-link" href="#">Media</a>
+					<ul class="color">
+						<li><a href="./book.html">Gallery</a></li>
+						<li><a href="./author.html">Videos</a></li>
+						<li><a href="./author.html">What's happening</a></li>
+					</ul>
+
+				</li>
+
+
+				<li class="nav-item"><a href="./contact.html" class="nav-link"><span>Contact</span></a></li>
 
 				</ul>
 			</div>
@@ -221,7 +275,7 @@
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" ">
 							<div class="text">
-								
+
 								<p>
 									<a href="#" class="btn btn-primary ">Hard Books</a>
 
@@ -235,14 +289,14 @@
 				</div>
 			</div>
 
-			
-		<!-- </div id="removesmall">  -->
+
+			<!-- </div id="removesmall">  -->
 			<div class="slider-item ">
 				<div class="overlay"></div>
 				<div class="container-fluid px-md-0">
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-					
+
 						<div class="one-third new-res remove-slider-item order-md-last img"
 							style="background-image:url(./Sliders/Quote\ 2.png); background-size: cover; background-repeat: no-repeat; border-left-width: 900px; ">
 							<div class="overlay"></div>
@@ -250,18 +304,14 @@
 						</div>
 
 						<div class="one-forth  d-flex align-items-center ftco-animate" data-scrollax="">
-							<!-- <div class="text">
-								<span class="subheading">We Design &amp; Build Brands</span>
-								<h1 class="mb-4 mt-3">Hi, I am <span>Clyde</span> This is my favorite work.</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#"
-										class="btn btn-primary btn-outline-primary">Download CV</a></p> -->
+
 						</div>
 					</div>
 				</div>
 			</div>
-		<!-- </div> -->
 
-			</div>
+
+		</div>
 		</div>
 		</div>
 	</section>
@@ -311,25 +361,62 @@
 
 
 	<section style="margin-top: 4em; margin-bottom: 2em;">
-<div class="container" style="display: flex; flex-direction: column; justify-content: center ; margin: auto; ">
+		<div class="container" style="display: flex; flex-direction: column; justify-content: center ; margin: auto; ">
 
 
-	<h3 style=" color: black; font-weight: 200; letter-spacing: 4px; text-align: center;">Insta(Connect)!!</h3><br>
+			<h3 style=" color: black; font-weight: 200; letter-spacing: 4px; text-align: center;">Insta(Connect)!!</h3>
+			<br>
 
-<div class="" style="display: flex; justify-content: center;">
-	<a  style=" max-width: 200px;" href="https://www.instagram.com/manojshah222/" class="m-btn" id="btn-me">Follow Me</a>
+			<div class="" style="display: flex; justify-content: center;">
+				<a style=" max-width: 200px;" href="https://www.instagram.com/manojshah222/" class="m-btn"
+					id="btn-me">Follow Me</a>
 
-</div>
-			
-</div>
+			</div>
+
+		</div>
 
 
-		<div class="ftco-counter img bg-light " id="section-counter" style="display: flex; justify-content: center;">
+
+
+
+		<div class="ftco-counter img " id="section-counter" style="display: flex; justify-content: center;">
 
 			<!-- SnapWidget -->
 
-	<iframe src="https://snapwidget.com/embed/973212" class="snapwidget-widget" allowtransparency="true" frameborder="0"
-		scrolling="no" style="border:none; overflow:hidden;  width:800px; height:200px"></iframe>
+			<iframe src="https://snapwidget.com/embed/973212" class="snapwidget-widget" allowtransparency="true"
+				frameborder="0" scrolling="no"
+				style="border:none; overflow:hidden;  width:800px; height:200px"></iframe>
+		</div>
+
+		
+		<div class="devicer"></div>
+		<div class="container-affiliations">
+			<div class="" style="text-align: center;">
+				<h3>Brands</h3>
+				<ul class="sponsors">
+					<li><a href="#"><img
+								src="https://kingswaytyres.com/admin_console/web//uploads/branches/6.jpg" /></a>
+					</li>
+					<li><a href="#"><img
+								src="https://kingswaytyres.com/admin_console/web//uploads/branches/6.jpg" /></a>
+					</li>
+					<li><a href="#"><img
+								src="https://kingswaytyres.com/admin_console/web//uploads/branches/6.jpg"
+								alt="sponsor" /></a></li>
+					<li><a href="#"><img
+								src="https://kingswaytyres.com/admin_console/web//uploads/branches/6.jpg"
+								alt="sponsor" /></a></li>
+					<li><a href="#"><img
+								src="https://kingswaytyres.com/admin_console/web//uploads/branches/6.jpg"
+								alt="sponsor" /></a></li>
+					<li><a href="#"><img
+								src="https://kingswaytyres.com/admin_console/web//uploads/branches/6.jpg"
+								alt="sponsor" /></a></li>
+
+				</ul>
+
+			</div>
+
 		</div>
 	</section>
 
@@ -414,6 +501,8 @@
 		<div id="panel_left" class='loader-section section-left'></div>
 		<div id="panel_right" class='loader-section section-right'></div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<script>
 		document.onreadystatechange = function () {
 			if (document.readyState === "complete") {
@@ -425,9 +514,10 @@
 			}
 		}
 	</script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-<!-- <script>
+
+
+	<!-- <script>
 
 	jQuery(document).ready(function () {
 
@@ -451,7 +541,7 @@
 		});
 
 </script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
 
 
 	<script src="js/jquery.min.js"></script>

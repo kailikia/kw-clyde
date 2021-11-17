@@ -4449,22 +4449,32 @@ nav ul li:hover > ul {
 	
 }
 nav ul li:hover > ul li{
-	margin-left: 120px;
-	margin-bottom: 1px;
-	border-radius: 4px;
+	margin-left: 90px;
+	/* margin-bottom: px; */
+	border-radius: 2px;
+	border: 1px solid blue;
+
 	background-color: rgb(52, 74, 193);
 }
 nav ul li ul li a:hover{
 color: yellow;
+
 }
 	
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	max-width:170px;
+	max-width:200px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	float:none;
 	display:list-item;
 	position: relative;
+	
 }
+nav ul ul li a{
+		line-height: 1.5em;
+}
+
 
 
 	
@@ -13192,7 +13202,7 @@ textarea.form-control {
 	/* flex: 1 0 24rem; */
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 0.3rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+
 	overflow: hidden;
 	max-width: 20rem;
 }
@@ -13323,3 +13333,10 @@ color: white;
 	transition: .1s ease-in-out;
 	
 }
+.devicer {
+		width: 90%;
+		display: block;
+		height: 1px;
+		background-color: black;
+		margin: 60px auto 0;
+		}
