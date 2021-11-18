@@ -13359,10 +13359,10 @@ color: white;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 8%;
-  animation: fade-in-scale-down 5s ease-out 1;
-  -webkit-animation: fade-in-scale-down 5s ease-in-out 1;
-  -moz-animation:    fade-in-scale-down 5s ease-in-out 1;
-  -o-animation:      fade-in-scale-down 5s ease-in-out 1;
+  animation: fade-in-scale-down 4s ease-out 1;
+  -webkit-animation: fade-in-scale-down 4s ease-in-out 1;
+  -moz-animation:    fade-in-scale-down 4s ease-in-out 1;
+  -o-animation:      fade-in-scale-down 4s ease-in-out 1;
 }
 
 @keyframes fade-in-scale-down{
