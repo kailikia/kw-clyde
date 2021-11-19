@@ -13348,35 +13348,22 @@ color: white;
 	 display: flex;
 	
 }
- .fadeIn{
-  width: 100%;
-  height:100%;
-  background: url('./Symbo') no-repeat center center fixed ; 
+ 
 
-  background-size: contain;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 8%;
-  animation: fade-in-scale-down 4s ease-out 1;
-  -webkit-animation: fade-in-scale-down 4s ease-in-out 1;
-  -moz-animation:    fade-in-scale-down 4s ease-in-out 1;
-  -o-animation:      fade-in-scale-down 4s ease-in-out 1;
+        .bg-primary-new {
+    background: transparent !important;
 }
+.owl-carousel .owl-item .img {
+    /* display: block; */
+    /* width: 40%; */
+    margin-left: 0;
+    width: 100%;
+    /* height: 14em; */
+}
+.owl-carousel .owl-item .img:hover {
+    transform: scale(115%);
+    
+    transition: 1s ease-in-out;
+ 
 
-@keyframes fade-in-scale-down{
-  0%{
-    opacity:0;
-    -webkit-transform:scale(1.1);
-    -ms-transform:scale(1.1);
-    transform:scale(1.1)
-  }
-  
-  100%{
-    opacity:1;
-    -webkit-transform:scale(1);
-    -ms-transform:scale(1);
-    transform:scale(1);
-  }
 }
