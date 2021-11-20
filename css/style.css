@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300;500;600&display=swap");
 :root {
 	--blue: #007bff;
 	--indigo: #6610f2;
@@ -48,7 +48,7 @@
 }
 
 html {
-	font-family: 'M PLUS 2', sans-serif;
+	font-family: "M PLUS 2", sans-serif;
 	line-height: 1.15;
 	letter-spacing: 1px;
 	font-size: 10px;
@@ -71,7 +71,7 @@ section {
 
 body {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -4409,31 +4409,28 @@ input[type="button"].btn-block {
 	}
 }
 
-
-
 /*  */
 nav ul {
 	padding: 0;
-  margin: 0;
+	margin: 0;
 	list-style: none;
 	position: relative;
-	}
-	
-nav ul li {
-	display:inline-block;
-
-	}
-
-nav a {
-	display:block;
-	padding:0 10px;	
-	color:#FFF;
-	font-size:20px;
-	line-height: 60px;
-	text-decoration:none;
 }
 
-nav ul .color:hover { 
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	padding: 0 10px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+nav ul .color:hover {
 	color: white;
 	margin-bottom: 2px;
 }
@@ -4441,16 +4438,15 @@ nav ul .color:hover {
 /* Hide Dropdowns by Default */
 nav ul ul {
 	display: none;
-	position: absolute; 
+	position: absolute;
 	top: 60px; /* the height of the main nav */
 }
-	
+
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
-	display:inherit;
-	
+	display: inherit;
 }
-nav ul li:hover > ul li{
+nav ul li:hover > ul li {
 	margin-left: 90px;
 	/* margin-bottom: px; */
 	border-radius: 2px;
@@ -4458,34 +4454,31 @@ nav ul li:hover > ul li{
 
 	background-color: rgb(52, 74, 193);
 }
-nav ul li ul li a:hover{
-color: yellow;
-
+nav ul li ul li a:hover {
+	color: yellow;
 }
-	
+
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	max-width:200px;
+	max-width: 200px;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	float:none;
-	display:list-item;
+	float: none;
+	display: list-item;
 	position: relative;
-	
 }
-nav ul ul li a{
-		line-height: 1.5em;
+nav ul ul li a {
+	line-height: 1.5em;
 }
 
-
-
-	
 /* Change this in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
+li > a:after {
+	content: " +";
+}
+li > a:only-child:after {
+	content: "";
+}
 /*  */
-
-
 
 .nav {
 	display: -webkit-box;
@@ -10724,7 +10717,7 @@ body {
 	line-height: 1.8;
 	letter-spacing: 1px;
 	font-weight: 400;
-	color:black;
+	color: black;
 }
 body.menu-show {
 	overflow: hidden;
@@ -13229,9 +13222,9 @@ textarea.form-control {
 	margin-top: 17rem;
 }
 .book-btns {
-    position: absolute;
-    left: 40%;
-    top: 50%;
+	position: absolute;
+	left: 40%;
+	top: 50%;
 }
 .book-btns > a {
 	padding: 15px 20px;
@@ -13256,114 +13249,118 @@ textarea.form-control {
 	}
 }
 
-.lions-text-div{
+.lions-text-div {
 	padding: 4rem 0;
 }
 
-
 /* leadership roles */
-.leadership-row{
+.leadership-row {
 	max-width: 1200px;
 	margin: 5rem 1rem;
 }
 .leadership {
-    display: flex;
-    width: 100%;
-    /* padding: 0; */
-    max-width: 82em;
+	display: flex;
+	width: 100%;
+	/* padding: 0; */
+	max-width: 82em;
 	min-height: 5em;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
-.leadership-item img{
-width: 70px;
-height:  70px;
-margin: auto;
+.leadership-item img {
+	width: 70px;
+	height: 70px;
+	margin: auto;
 }
 
 .leadership-item {
-    font-size: 15px;
-    width: 11em;
-    height: 9em;
-    margin: 5px 10px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	font-size: 15px;
+	width: 11em;
+	height: 9em;
+	margin: 5px 10px;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
-.leadership-item:hover{
-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-transition: .2s ease-in-out;
-cursor: pointer;
-background:rgb(253, 207, 43);
-transform: scale(101.5%);
-color: white;
-
+.leadership-item:hover {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	background: rgb(253, 207, 43);
+	transform: scale(101.5%);
+	color: white;
 }
 
-
-.role-item{
+.role-item {
 	width: 15em;
 	height: 9em;
 	text-align: center;
 	position: relative;
 	padding: 1.5em 1em;
 }
-.role-container{
+.role-container {
 	max-width: 1300px;
 }
-.role-item:hover{
-	background:rgb(253, 207, 43);
+.role-item:hover {
+	background: rgb(253, 207, 43);
 	color: white;
 	transform: scale(101.5%);
 }
 
-.leadership-row h2, .role-container h2{
+.leadership-row h2,
+.role-container h2 {
 	text-align: center;
 	margin-bottom: 1em;
 }
-.role-item p span{
+.role-item p span {
 	color: rgb(52, 74, 193);
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 
-.role-item:hover p span{
+.role-item:hover p span {
 	padding: 8px;
-	transition: .1s ease-in-out;
-	
+	transition: 0.1s ease-in-out;
 }
 .devicer {
-		width: 90%;
-		display: block;
-		height: 1px;
-		background-color: black;
-		margin: 60px auto 0;
-		}
-.box-shadower{
-	/* box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
-	 display: flex;
-	
+	width: 90%;
+	display: block;
+	height: 1px;
+	background-color: black;
+	margin: 60px auto 0;
 }
- 
+.box-shadower {
+	/* box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; */
+	display: flex;
+}
 
-        .bg-primary-new {
-    background: transparent !important;
+.bg-primary-new {
+	background: transparent !important;
 }
 .owl-carousel .owl-item .img {
-    /* display: block; */
-    /* width: 40%; */
-    margin-left: 0;
-    width: 100%;
-    /* height: 14em; */
+	/* display: block; */
+	/* width: 40%; */
+	margin-left: 0;
+	width: 100%;
+	/* height: 14em; */
 }
 .owl-carousel .owl-item .img:hover {
-    transform: scale(115%);
-    
-    transition: 1s ease-in-out;
- 
+	transform: scale(115%);
 
+	transition: 1s ease-in-out;
+}
+
+#background-snowflake {
+	position: absolute;
+	background-repeat: no-repeat;
+	opacity: 0.09;
+	width: 50%;
+	background-position: center;
+	top: 25%;
+	left: 25%;
 }
