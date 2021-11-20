@@ -15,14 +15,14 @@
 
     <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/flaticon.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 
 
@@ -81,19 +81,146 @@
             border-radius: 3px;
         }
 
-        .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
 
-            color: black;
+
+        .sponsors ul {
+            display: block;
+            list-style: none none;
+            text-align: center;
+            margin: 1em;
+            padding: 0;
+        }
+
+        .sponsors li {
+            display: inline-block;
+            /* width: 10em; */
+            /* height: 96px; */
+            clear: none;
+            margin: 16px;
 
         }
+
+        .sponsors img {
+            width: 150px;
+            height: 150px;
+        }
+
+
+
+        @media (max-width: 1199px) {
+            .image-div img {
+                margin: 0;
+                height: 40%;
+
+            }
+
+            .text-div {
+                margin-left: -40px;
+            }
+
+        }
+
+        @media (max-width: 991px) {
+            .cont-flex {
+                display: flex;
+                justify-content: center;
+            }
+
+            .image-div img {
+                margin: -43px;
+                margin-left: -10px;
+                height: auto;
+                margin-top: 1em;
+            }
+
+
+
+            .text-div {
+                margin-left: 20px;
+            }
+
+            /* slider */
+
+            @media (min-width: 520px) {
+                .image-div img {
+
+                    margin-left: -56px;
+                }
+
+            }
+
+            @media (min-width: 490px) {
+                .image-div img {
+
+                    margin-left: -40px;
+                }
+
+            }
+
+            @media (min-width: 768px) {
+                .image-div {
+                    margin-left: 160px;
+                }
+
+            }
+
+            @media (min-width: 320px) {
+                body {
+                    overflow-x: hidden;
+                }
+
+                .image-div img {
+
+                    margin-left: -110px;
+                    max-height: 39.5%;
+                }
+            }
+
+            @media (min-width: 370px) {
+
+                .image-div img {
+
+                    margin-left: -90px;
+                    /* max-height: 39.5%; */
+                }
+            }
+
+
+
+        }
+
+        .owl-carousel .owl-item img {
+            width: 70%;
+            margin: auto;
+            padding: 0;
+            margin-bottom: -3em;
+        }
+
+        .testimony-wrap .name {
+            position: relative;
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 0;
+            color: black;
+            text-align: center;
+            vertical-align: bottom;
+            margin-left: 35px;
+            padding-top: 1em;
+        }
+
+        /* .pl-5, .px-5 {
+    padding-left: 0 !important;
+	text-align: center;
+	margin-left: 35px;
+} */
     </style>
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body id="home_page" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target ftco-animate"
         id="ftco-navbar">
         <div class="container" style=" min-height : 100% ; min-width: 100%;">
 
@@ -118,7 +245,7 @@
                     </li>
                 </ul>
                 <!-- <li class="nav-item"><a href="./affiliations.html" class="nav-link"><span>Affiliations</span></a>
-    					</li> -->
+					</li> -->
                 <li class="nav-item"><a class="nav-link" href="#">Affiliations</a>
                     <ul class="color">
                         <li><a href="./kingsway.html">Kingsway Group</a></li>
@@ -128,6 +255,7 @@
                         <li><a href="./AAKenya.html">AA Kenya</a>
                         <li><a href="./kilimanjaroTrust.html">Kilimanjaro Blind Trust</a>
                         <li><a href="./specialOlympics.html">Special Olympics</a>
+                        <li><a href="./others.html">Others..</a>
 
                         </li>
                     </ul>
@@ -158,182 +286,18 @@
         </div>
     </nav>
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('./img/Headers/Kingsway.jpg');"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text align-items-end justify-content-center">
-
-            </div>
-        </div>
-    </section>
 
 
-    <section class="">
-        <div class="container cont-flex">
-
-            <div class="lions-text-div">
-                <h1 class="ftco-animate"> <img style="max-width: 6em;" src="./img/Affliations Logos/Kingsway.png" alt=""
-                        srcset=""> <span style="color: blue;">Kingsway Group...</span>
-                </h1>
-                <!-- <h2>Hello! i'm Ma</h2> -->
-                <p class="ftco-animate">
-                    It’s said that it is not the destination but the journey traveled. This singular statement
-                    clearly outlines the true and incredible story of Kingsway Tyres. It’s years of doing things
-                    differently, leading the way, challenging the norms, and becoming a company of
-                    innovation. Since Kingsway tires began in 1960, the company strived to make a mark in
-                    every little thing they did. For Kingsway, all customers deserve to have a friend as they start
-                    off wherever life leads them; Kingsway has been that friend for over 60 years, more so
-                    because of the goals they set for themselves and the guidelines they firmly placed to get them
-                    there. Kingsway is committed to meeting your expectations. A practice that has set
-                    them apart from the rest, as the company mantras clearly demonstrate...
-                </p>
-
-                <p class="ftco-animate">
-                    For half a century, Kingsway Tyres has been present through the journeys that their valued
-                    customers have taken in and around East Africa. Kingsway is proud to be part of the
-                    successes these journeys bring. Kingsway Tyres Limited wants to continue sharing with you
-                    the continuing and intriguing story of life on the road. Now more than ever these stories
-                    will be painted with smiles of eager East Africans with the introduction of the revolutionary
-                    retreading plant, Kingsway Recamic Factory. It is the beginning of taking you further each
-                    and every day.
-                </p>
-                <p class="ftco-animate">
-                    It’s said that it is not the destination but the journey traveled. This singular statement
-                    clearly outlines the true and incredible story of Kingsway Tyres. It’s years of doing things
-                    differently, leading the way, challenging the norms, and becoming a company of
-                    innovation.
-                </p>
-                <p class="ftco-animate">
-                    Since Kingsway tires began in 1960, the company strived to make a mark in every little
-                    thing they did. For Kingsway, all customers deserve to have a friend as they start off
-                    wherever life leads them; Kingsway has been that friend for over 60 years, more so
-                    because of the goals they set for themselves and the guidelines they firmly placed to get
-                    them there.
-                </p>
-
-                <p class="ftco-animate">
-                    Kingsway is committed to meeting your expectations. A practice that has set
-                    them apart from the rest, as the company mantras clearly demonstrate.
-                </p>
-
-            </div>
-        </div>
-    </section>
-
-    <div class="container ftco-animate" style=" position: relative; ">
-        <img style=" width: 7em; bottom: 0; background-color: white;  display: block; margin-left: auto; margin-right: auto; align-items: center; transform: translateY(); background-color: ; padding:1em;"
-            src="./Symbol.png" alt="">
-
-        <div style="z-index: -1; position: absolute; top: 0px; " class="devicer"></div>
-    </div>
+<div class="container">
+    <h1 style="text-transform: uppercase; text-align: center;">Others page</h1>
+</div>
 
 
-    <section class="ftco-section testimony-section bg-primary-new">
-        <div class="container">
-            <div class="row justify-content-center pb-5">
-
-            </div>
-            <div class="row ftco-animate">
-                <div class="col-md-12">
-                    <div class="carousel-testimony owl-carousel">
 
 
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-
-                                    <p class="mb-4 pl-5">
-                                        <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
-                                    </p>
 
 
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-
-                                    <p class="mb-4 pl-5">
-                                        <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-
-                                    <p class="mb-4 pl-5">
-                                        <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
-
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-
-                                    <p class="mb-4 pl-5">
-                                        <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
-
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-
-                                    <p class="mb-4 pl-5">
-                                        <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-
-                                    <p class="mb-4 pl-5">
-                                        <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
-
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap py-4">
-                                <div class="text">
-
-                                    <p class="mb-4 pl-5">
-                                        <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
-
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- end projects -->
 
 
     <footer class="ftco-footer ftco-section reduce">
@@ -356,8 +320,7 @@
                             <li><a href=""><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
                             <li><a href="./affiliations.html"><span
-                                        class="fa fa-chevron-right mr-2"></span>Affiliation</a>
-                            </li>
+                                        class="fa fa-chevron-right mr-2"></span>Affiliation</a></li>
 
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Book</a></li>
                             <li><a href="./contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
@@ -406,7 +369,6 @@
 
 
 
-
     <!-- loader -->
     <div id="preloader">
         <div id="loader-img">
@@ -415,6 +377,8 @@
         <div id="panel_left" class='loader-section section-left'></div>
         <div id="panel_right" class='loader-section section-right'></div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
         document.onreadystatechange = function () {
             if (document.readyState === "complete") {
@@ -427,7 +391,33 @@
         }
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+
+    <!-- <script>
+
+	jQuery(document).ready(function () {
+
+			//alert($('#home_page').width());
+
+			function ScreenResizeSmall() {
+				alert("Small Device");
+
+				$('section').removeClass('hero');
+			}
+
+
+			if ($('#home_page').width() < 756) {
+
+				ScreenResizeSmall();
+				//alert('small');
+
+			} else {
+		
+			}
+		});
+
+</script> -->
+
 
 
     <script src="js/jquery.min.js"></script>
@@ -448,7 +438,5 @@
     <script src="js/main.js"></script>
 
 </body>
-
-<!-- Mirrored from technext.github.io/clyde/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Nov 2021 21:50:36 GMT -->
 
 </html>
