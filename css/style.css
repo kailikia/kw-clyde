@@ -13146,7 +13146,7 @@ textarea.form-control {
 	background-size: contain;
 	/* max-width: 30%;
 	height: 130%; */
-	/* transform: translateX(15%); */
+	transform: translateX(13%);
 	position: absolute;
 	bottom: -80px;
 	left: 13em;
