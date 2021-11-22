@@ -169,8 +169,7 @@
     <!-- <iframe src="https://snapwidget.com/embed/973696" class="snapwidget-widget" allowtransparency="true" frameborder="0"
     scrolling="no" style="border:none; overflow:hidden;  width:765px; height:510px"></iframe> -->
 
-
-    <div style="margin-top: 8em; display: flex; flex-wrap: wrap; justify-content: center;">
+    <div id="div_id_name"  style=" margin-top: 8em; display: flex; flex-wrap: wrap; justify-content: center; display: none;">
 
         <blockquote style="margin: 1em;" class="twitter-tweet">
             <p lang="en" dir="ltr">Celebrating The World Diabetes Day With The Lions Club of Thane North who Presented
@@ -300,9 +299,10 @@
         <div id="panel_left" class='loader-section section-left'></div>
         <div id="panel_right" class='loader-section section-right'></div>
     </div>
-    <script>
+    <!-- <script>
         document.onreadystatechange = function () {
             if (document.readyState === "complete") {
+                alert("complete");
                 $("#panel_left").addClass("panel_left");
                 $("#panel_right").addClass("panel_right");
                 $("#loader").addClass("loaded-circle");
@@ -310,7 +310,7 @@
                 $("#preloader").addClass("loaded-img");
             }
         }
-    </script>
+    </script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
@@ -331,9 +331,23 @@
     <script src="js/google-map.js"></script>
 
     <script src="js/main.js"></script>
+    <script >
+        $(document).ready(function () { 
+
+            setTimeout(function () { 
+                $('#div_id_name').css('display', 'flex');
+                $("#panel_left").addClass("panel_left");
+                $("#panel_right").addClass("panel_right");
+                $("#loader").addClass("loaded-circle");
+                $("#loader-img").addClass("loaded-img");
+                $("#preloader").addClass("loaded-img");
+                $('#div_id_name').css('display', 'flex');
+            }, 5000);
+        });
+    </script>
 
 </body>
 
-<!-- Mirrored from technext.github.io/clyde/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Nov 2021 21:50:36 GMT -->
+
 
 </html>
