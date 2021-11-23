@@ -10751,7 +10751,7 @@ h5,
 .h5 {
 	line-height: 1.5;
 	color: rgb(20, 21, 182);
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .text-primary {
@@ -11938,6 +11938,7 @@ h5,
 	border-radius: 5px;
 	height: 265px;
 	width: 374px;
+	margin: auto;
 }
 .testimony-wrap .user-img {
 	width: 80px;
@@ -12176,7 +12177,7 @@ textarea.form-control {
 
 .heading-section h2 {
 	font-size: 40px;
-	font-weight: 600;
+	font-weight: 400;
 }
 .heading-section h2 span {
 	font-weight: 400;
@@ -13138,7 +13139,7 @@ textarea.form-control {
 	justify-content: flex-end;
 	margin: 7rem 0px;
 	background-color: rgb(20, 21, 182);
-	height: 250px;
+	min-height: 250px;
 	position: relative;
 }
 .book-image {
@@ -13167,14 +13168,12 @@ textarea.form-control {
  flex: 1;
 } */
 .author-image img {
-	margin-left: -50px;
-	width: 200%;
-	height: 100%;
+width: 25em;
+margin-top: 10%;
 }
 .author-text {
-	/* padding: 0px 100px; */
-	padding-left: 180px;
-	text-align: left;
+/* width: 200em; */
+margin-left: 2em;
 }
 
 /* imag book section */
@@ -13363,4 +13362,21 @@ textarea.form-control {
 	background-position: center;
 	top: 25%;
 	left: 25%;
+}
+
+.book-container{
+	display: flex;
+	margin-left: 4em;
+	margin-right: 4em;
+	
+}
+
+.book-container img{
+	max-width: 30%;
+height: 24em;
+width: 100%;
+	/* margin: auto; */
+}
+.book-container .text{
+	padding-right: 2em;
 }

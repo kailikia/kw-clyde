@@ -22,11 +22,38 @@
 
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <style>
-           .ftco-navbar-light .navbar-nav > .nav-item > .nav-link{
-       color: black;
-   }
+        .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+            color: black;
+        }
+
+        .contact-section {
+            margin-top: 100px;
+        }
+
+        @media (max-width: 991px) {
+            .contact-section {
+                margin-top: 0;
+            }
+        }
+
+            @media (max-width: 991px) {
+                .ftco-section {
+                    padding: 0;
+                }
+            }
+
+            @media (max-width: 375px) {
+                .new-row{
+                    margin-top: 1em;
+                    margin-bottom: 8em;
+                    
+                }
+            .dbox{
+                padding-left: 0;
+            }
+            }
     </style>
 </head>
 
@@ -36,7 +63,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
         id="ftco-navbar">
         <div class="container" style=" min-height : 100% ; min-width: 100%;">
-    
+
             <a class="navbar-brand" href="./index.html"><img style="margin-left: 10px; height: 80px;" src="./Symbol.png"
                     alt="" srcset=""></a>
             <button style="	color: black !important; font-weight: 700;"
@@ -44,17 +71,17 @@
                 data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
-    
+
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav nav ml-auto">
                     <li s class="nav-item"><a href="./index.html" class="nav-link"><span>Home</span></a></li>
-    
+
                     <li class="nav-item"><a class="nav-link" href="#">About</a>
                         <ul class="color">
-                                <li><a href="./about.html"> Professional </a></li>
-                                <li><a href="./lions.html">Philanthropy</a></li>
-    
-    
+                            <li><a href="./about.html"> Professional </a></li>
+                            <li><a href="./lions.html">Philanthropy</a></li>
+
+
                     </li>
                 </ul>
                 <!-- <li class="nav-item"><a href="./affiliations.html" class="nav-link"><span>Affiliations</span></a>
@@ -68,174 +95,176 @@
                         <li><a href="./AAKenya.html">AA Kenya</a>
                         <li><a href="./kilimanjaroTrust.html">Kilimanjaro Blind Trust</a>
                         <li><a href="./specialOlympics.html">Special Olympics</a>
-                                                    <li><a href="./others.html">Others..</a>
-    
+                        <li><a href="./others.html">Others..</a>
+
                         </li>
                     </ul>
                 </li>
-    
-    
+
+
                 <li class="nav-item"><a class="nav-link" href="#">Book</a>
                     <ul class="color">
                         <li><a href="./book.html">One In A Million</a></li>
                         <li><a href="./author.html">About the author</a></li>
                     </ul>
-    
+
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">Media</a>
                     <ul class="color">
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./videos.html">Videos</a></li>
-            <li><a href="./currents.html">What's happening</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./videos.html">Videos</a></li>
+                        <li><a href="./currents.html">What's happening</a></li>
                     </ul>
-    
+
                 </li>
-    
-    
+
+
                 <li class="nav-item"><a href="./contact.html" class="nav-link"><span>Contact</span></a></li>
-    
+
                 </ul>
             </div>
         </div>
     </nav>
 
-<section style="margin-top: 100px;" class="ftco-section contact-section ftco-no-pb" id="contact-section">
-    <div class="container">
-    <h1 style=" margin-bottom: 1em; margin-left: 10em;" >Contact Me</h1>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <h1 style=" text-align: center;">Contact Me</h1>
 
-        <div class="row block-9">
-            <div class="col-md-8">
-                <form action="#" class="bg-light p-4 p-md-5 contact-form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name">
+            <div class="row block-9">
+                <div class="col-md-8">
+                    <form action="#" class="bg-light p-4 p-md-5 contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Email">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                    placeholder="Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                    </form>
 
-            </div>
-
-            <div class="col-md-4 d-flex pl-md-5">
-                <div class="row">
-                    <div class="dbox w-100 d-flex">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-map-marker"></span>
-                        </div>
-                        <div class="text">
-                            <p><span>Address:</span> Kingsway House ,7 University Way, Nairobi, Kenya</p>
-                        </div>
-                    </div>
-                
-                    <div class="dbox w-100 d-flex">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-paper-plane"></span>
-                        </div>
-                        <div class="text">
-                            <p><span>Email:</span> <a href="mailto:info@yoursite.com">oneinamillion@kingswaytyres.com</a></p>
-                        </div>
-                    </div>
-                
                 </div>
-                <!-- <div id="map" class="map"></div> -->
+
+                <div class="col-md-4 d-flex pl-md-5">
+                    <div class="row new-row">
+                        <div class="dbox w-100 d-flex new-d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-map-marker"></span>
+                            </div>
+                            <div class="text">
+                                <p><span>Address:</span> Kingsway House ,7 University Way, Nairobi, Kenya</p>
+                            </div>
+                        </div>
+
+                        <div class="dbox w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-paper-plane"></span>
+                            </div>
+                            <div class="text">
+                                <p><span>Email:</span> <a
+                                        href="mailto:info@yoursite.com">oneinamillion@kingswaytyres.com</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div id="map" class="map"></div> -->
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <!-- footer -->
 
-<footer class="ftco-footer ftco-section reduce">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Leader par excellence...</h2>
-                    <p>Dr. Manoj Shah is someone who has redefined the achievement standards, yet what defines him
-                        is the admirable trait of utmost
-                        humility and passion in every aspect of his multifarious life.
-                    </p>
-                    <p><a href="./about.html" class="btn btn-primary">More about Dr. Manoj Shah</a></p>
+    <footer class="ftco-footer ftco-section reduce">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Leader par excellence...</h2>
+                        <p>Dr. Manoj Shah is someone who has redefined the achievement standards, yet what defines him
+                            is the admirable trait of utmost
+                            humility and passion in every aspect of his multifarious life.
+                        </p>
+                        <p><a href="./about.html" class="btn btn-primary">More about Dr. Manoj Shah</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Links</h2>
-                    <ul class="list-unstyled">
-                        <li><a href=""><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
-                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-                        <li><a href="./affiliations.html"><span class="fa fa-chevron-right mr-2"></span>Affiliation</a>
-                        </li>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href=""><span class="fa fa-chevron-right mr-2"></span>Home</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                            <li><a href="./affiliations.html"><span
+                                        class="fa fa-chevron-right mr-2"></span>Affiliation</a>
+                            </li>
 
-                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Book</a></li>
-                        <li><a href="./contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Contact me</h2>
-                    <div class="block-23 mb-3">
-                        <ul>
-                            <li><span class="icon fa fa-map marker"></span><span class="text">
-                                    7, University Way,Kingsway House, Nairobi, Kenya</span></li>
-
-                            <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span
-                                        class="text">oneinamillion@kingswaytyres.com</span></a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Book</a></li>
+                            <li><a href="./contact.html"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
                         </ul>
                     </div>
-                    <ul class="ftco-footer-social list-unstyled mt-2">
-                        <li class="ftco-animate"><a href="https://twitter.com/MShah222"><i
-                                    class="fab fa-twitter-square"></i></a></i></span></a></li>
-                        <li class="ftco-animate"><a href="https://www.facebook.com/manoj.shah.3576"><i
-                                    class="fab fa-facebook-square"></i></span></a></li>
-                        <li class="ftco-animate"><a href="https://www.linkedin.com/in/dr-manoj-shah-b2571b26/"><i
-                                    class="fab fa-linkedin"></i></span></a></li>
-                        <li class="ftco-animate"><a href="https://www.instagram.com/manojshah222/"><i
-                                    class="fab fa-instagram"></i></span></a></li>
-                    </ul>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Contact me</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map marker"></span><span class="text">
+                                        7, University Way,Kingsway House, Nairobi, Kenya</span></li>
+
+                                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span
+                                            class="text">oneinamillion@kingswaytyres.com</span></a></li>
+                            </ul>
+                        </div>
+                        <ul class="ftco-footer-social list-unstyled mt-2">
+                            <li class="ftco-animate"><a href="https://twitter.com/MShah222"><i
+                                        class="fab fa-twitter-square"></i></a></i></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/manoj.shah.3576"><i
+                                        class="fab fa-facebook-square"></i></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/dr-manoj-shah-b2571b26/"><i
+                                        class="fab fa-linkedin"></i></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/manojshah222/"><i
+                                        class="fab fa-instagram"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-
-                <p>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script> All rights reserved
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
-    
-    
+
+
     <!-- loader -->
     <div id="preloader">
         <div id="loader-img">
@@ -255,10 +284,10 @@
             }
         }
     </script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-    
-    
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -273,7 +302,7 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
     <script src="js/google-map.js"></script>
-    
+
     <script src="js/main.js"></script>
 
 </body>
