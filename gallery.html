@@ -150,19 +150,22 @@
 		}
 
 		.gallery-cont {
-			max-width: 38rem;
+			max-width: 50rem;
 			width: 100%;
+			max-height: 500px;
 			display: flex;
 			background-size: contain;
+			overflow-x: scroll;
+
 
 		}
 
-		@media (max-width: 606px) {
+		/* @media (max-width: 606px) {
 			.gallery-cont {
 				flex-wrap: wrap;
 
 			}
-		}
+		} */
 	</style>
 
 </head>
@@ -248,7 +251,7 @@
 		</ul>
 		<!-- Grid -->
 		<div style="max-width: 1200px;" class="container gallery-cont">
-			<div style=" " class="pictures-grid">
+			<div  class="pictures-grid">
 			</div>
 
 		</div>
@@ -432,17 +435,22 @@
 		const pictures = [
 			{
 				url:
-					'https://images.unsplash.com/photo-1414788101029-46aec67101ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80',
+					'./img/New Content/Small/JPEG/IMG_5846.jpg',
 				category: 'one in a million'
 			},
 			{
 				url:
-					'https://images.unsplash.com/photo-1498637841888-108c6b723fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1782&q=80',
+					'./img/New Content/Small/JPEG/IMG_5794.jpg',
 				category: 'one in a million'
 			},
 			{
 				url:
-					'https://images.unsplash.com/photo-1498637841888-108c6b723fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1782&q=80',
+					'./img/New Content/Small/JPEG/IMG_3867.jpg',
+				category: 'one in a million'
+			},
+			{
+				url:
+					'./img/New Content/Small/JPEG/IMG_6024.jpg',
 				category: 'one in a million'
 			},
 			{
@@ -464,24 +472,24 @@
 
 			{
 				url:
-					'./download.jpg',
+					'./img/New Content/IMG_6972.jpg',
 				category: 'others'
 			},
 			{
 				url:
-					'./img/manojphotos/36_1.JPG',
+					'./img/New Content/IMG_6947.JPG',
 				category: 'others'
 			}
 			,
 			{
 				url:
-					'./img/manojphotos/DSC_9897_1.JPG',
+					'./img/New Content/Small/JPEG/IMG_5370.jpg',
 				category: 'others'
 			}
 			,
 			{
 				url:
-					'./img/manojphotos/DSC_9937_1.JPG',
+					'./img/New Content/Small/JPEG/IMG_3793.jpg',
 				category: 'others'
 			}
 		];
