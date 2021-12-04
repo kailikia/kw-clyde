@@ -4425,7 +4425,7 @@ nav a {
 	display: block;
 	padding: 0 10px;
 	color: #fff;
-	font-size: 20px;
+	font-size: 14px;
 	line-height: 60px;
 	text-decoration: none;
 }
@@ -4439,7 +4439,7 @@ nav ul .color:hover {
 nav ul ul {
 	display: none;
 	position: absolute;
-	top: 60px; /* the height of the main nav */
+	top: 4em; /* the height of the main nav */
 }
 
 /* Display Dropdowns on Hover */
@@ -4447,7 +4447,7 @@ nav ul li:hover > ul {
 	display: inherit;
 }
 nav ul li:hover > ul li {
-	margin-left: 90px;
+	/* margin-left: 90px; */
 	/* margin-bottom: px; */
 	border-radius: 2px;
 	border: 1px solid blue;
@@ -4478,6 +4478,15 @@ li > a:after {
 li > a:only-child:after {
 	content: "";
 }
+
+        @media (max-width: 991px) {
+			nav ul li:hover > ul li {
+	margin-left: 10em;
+
+}
+
+		}
+
 /*  */
 
 .nav {
@@ -10713,7 +10722,7 @@ a.text-dark:focus {
 body {
 	font-family: "Poppins", Arial, sans-serif;
 	background: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.8;
 	letter-spacing: 1px;
 	font-weight: 400;
@@ -11377,6 +11386,8 @@ h5,
 .owl-carousel.home-slider .owl-dots .owl-dot.active {
 	background: #fff;
 }
+
+
 
 .hero-wrap {
 	width: 100%;
@@ -13137,7 +13148,7 @@ textarea.form-control {
 .book-section {
 	display: flex;
 	justify-content: flex-end;
-	margin: 7rem 0px;
+	margin: 15rem 0 7em 0;
 	background-color: rgb(20, 21, 182);
 	min-height: 250px;
 	position: relative;
@@ -13168,12 +13179,12 @@ textarea.form-control {
  flex: 1;
 } */
 .author-image img {
-width: 25em;
-margin-top: 10%;
+	width: 25em;
+	margin-top: 10%;
 }
 .author-text {
-/* width: 200em; */
-margin-left: 2em;
+	/* width: 200em; */
+	margin-left: 2em;
 }
 
 /* imag book section */
@@ -13218,7 +13229,7 @@ margin-left: 2em;
 .million-book {
 	width: 100%;
 	max-height: 40rem;
-	margin-top: 17rem;
+	margin-top: 2px;
 }
 .book-btns {
 	position: absolute;
@@ -13364,19 +13375,18 @@ margin-left: 2em;
 	left: 25%;
 }
 
-.book-container{
+.book-container {
 	display: flex;
 	margin-left: 4em;
 	margin-right: 4em;
-	
 }
 
-.book-container img{
+.book-container img {
 	max-width: 30%;
-height: 24em;
-width: 100%;
+	height: 22em;
+	width: 100%;
 	/* margin: auto; */
 }
-.book-container .text{
+.book-container .text {
 	padding-right: 2em;
 }

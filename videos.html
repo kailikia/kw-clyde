@@ -26,146 +26,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
 
-
     <style>
-        * {
-            color: white;
+        body{
+background: rgb(52,74,193);
+background: linear-gradient(90deg, rgba(52,74,193,1) 10%, rgba(253,207,43,1) 100%);
         }
-
-        #about {
-            padding: 250px 0;
-
-        }
-
-        .align-items-center {
-            -ms-flex-align: center !important;
-            align-items: center !important;
-            display: flex;
-        }
-
-        .container {
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .imgx {
-            max-height: 27rem;
-        }
-
-        .m-btn.m-btn-theme {
-            background: #f34236;
-            color: #ffffff;
-            border-color: #f34236;
-            box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-        }
-
-        .m-5px-l {
-            margin-left: 5px;
-        }
-
-        .m-btn {
-            display: inline-block;
-            border: 1px solid transparent;
-            color: inherit;
-            line-height: inherit;
-            border-radius: 0;
-            width: auto;
-            padding: 12px 25px;
-            font-size: 14px;
-            cursor: pointer;
-            font-weight: 600;
-            text-transform: uppercase;
-            -moz-transition: ease-in-out all 0.55s;
-            -o-transition: ease-in-out all 0.55s;
-            -webkit-transition: ease-in-out all 0.55s;
-            transition: ease-in-out all 0.55s;
-            text-align: center;
-            border-radius: 3px;
-        }
-
-        #site {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        #player {}
-
-        .player {
-            margin: auto;
-            max-width: 50em;
-            padding: 1em;
-
-            &__video {
-                height: 0;
-                overflow: hidden;
-                padding-bottom: 56.25%;
-                position: relative;
-
-                iframe {
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                }
-            }
-        }
-
-        #gallery {}
-
+        /* taking care of responsive layout */
         .gallery {
-            background-color: ;
-            padding: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            /* margin: 0.5rem; */
+            margin-top: 10em;
+            margin-bottom: 5em;
+        }
+.single-video {
+    width: 36rem;
+    flex-grow: 1;
+    margin: 1px;
+  
+}
 
-            &__item {
-                align-items: center;
-                background-color: black;
-                color: white;
-                cursor: pointer;
-                display: flex;
-                justify-content: center;
-                padding: 0 .75em;
+        /* taking care of the video aspect-ratio */
+        figure {
+            position: relative;
+            padding: 0 0 56.25% 0;
+        }
 
-                &__img {
-                    width: 40%;
+        figure iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+              border: 2px black solid;
+        }
+                @media (max-width: 1000px) {
+                            .gallery {
+  
+            margin-top: 0em;
+            margin-bottom: 10em;
+
+        }
+
                 }
-
-                &__span {
-                    padding-left: 1em;
-                    text-shadow: 1px 1px 2px red;
-                    width: 60%;
-                }
-            }
-        }
-
-        @media screen and (min-width: 30em) {
-            .gallery {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: .75em;
-            }
-        }
-
-        @media screen and (min-width: 48em) {
-            .gallery {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media screen and (min-width: 60em) {
-            .gallery {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
     </style>
+
 
 </head>
 
-<body style="background-color: rgb(47, 50, 59); " data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
@@ -192,8 +99,7 @@
 
                     </li>
                 </ul>
-                <!-- <li class="nav-item"><a href="./affiliations.html" class="nav-link"><span>Affiliations</span></a>
-						</li> -->
+
                 <li class="nav-item"><a class="nav-link" href="#">Affiliations</a>
                     <ul class="color">
                         <li><a href="./kingsway.html">Kingsway Group</a></li>
@@ -236,28 +142,43 @@
 
 
 
-    <div style="margin-top: 7em; overflow-x: hidden;" id="site">
-        <div id="player">
-            <div class="player">
-                <div class="player__video">
-                    <!-- Current video is for reference only. It will be generated by JavaScript code. -->
-                    <iframe id="current-video" width="560" height="315" src="https://www.youtube.com/embed/BWIPZvwcnX8"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-            </div>
+    <div class="container gallery">
+        <div class="single-video">
+            <figure>
+            <iframe  src="https://www.youtube.com/embed/6TJzOdvaCTA" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </figure>
         </div>
-        <div id="gallery">
-            <div class="gallery">It will be generated by JavaScript code.</div>
+        <div class="single-video">
+            <figure>
+<iframe  src="https://www.youtube.com/embed/qyFpAaSZFB0" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+            </figure>
+        </div>
+        <div class="single-video">
+            <figure>
+<iframe  src="https://www.youtube.com/embed/mVAdrv708gU" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+            </figure>
+        </div>
+        <div class="single-video">
+            <figure>
+    <iframe src="https://www.youtube.com/embed/ImVaF84ugX0" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+            </figure>
+        </div>
+        <div class="single-video">
+            <figure>
+<iframe  src="https://www.youtube.com/embed/vYxiHYChaj4" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+            </figure>
         </div>
     </div>
-
-
-
-    <a href="https://codepen.io/dedica/pen/KrmbjG"> Sample another</a>
-
-
-
-
 
 
 
@@ -303,14 +224,16 @@
                             </ul>
                         </div>
                         <ul class="ftco-footer-social list-unstyled mt-2">
-                            <li class="ftco-animate"><a href="https://twitter.com/MShah222"><i
-                                        class="fab fa-twitter-square"></i></a></i></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.facebook.com/manoj.shah.3576"><i
-                                        class="fab fa-facebook-square"></i></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/dr-manoj-shah-b2571b26/"><i
-                                        class="fab fa-linkedin"></i></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.instagram.com/manojshah222/"><i
-                                        class="fab fa-instagram"></i></span></a></li>
+                            <li class="ftco-animate"><a href="https://twitter.com/MShah222" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a></i></span></a>
+                            </li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/manoj.shah.3576" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/dr-manoj-shah-b2571b26/"
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></span></a>
+                            </li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/manojshah222/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-instagram"></i></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -353,72 +276,9 @@
         }
     </script>
 
-    <script>
-            ;
 
-        // YouTube sintaxis for embedded videos and images
-
-        const ytVideoPrefix = `https://www.youtube.com/embed/`
-        const ytImagePathPrefix = `https://i.ytimg.com/vi/`
-        const ytImagePathSufix = `/hqdefault.jpg`
-
-        // Array of Videos
-
-        let arrVideos = [
-            { name: 'Cat Man Do', data: 'w0ffwDYo00Q' },
-            { name: 'Let Me In!', data: '4rb8aOzy9t4' },
-            { name: 'TV Dinner', data: 's13dLaTIHSg' },
-
-
-        ]
-
-        // Current video
-
-        let currentVideo = document.getElementById('current-video')
-        currentVideo.src = `${ytVideoPrefix}${arrVideos[0].data}`
-
-        // Add .gallery__items to .gallery
-
-        let gallery = document.querySelector('.gallery')
-        gallery.innerHTML = ``
-
-        for (let i = 0; i < arrVideos.length; i++) {
-            gallery.innerHTML += `
-    <div class="gallery__item" data="${arrVideos[i].data}">
-      <img class="gallery__item__img" src="${ytImagePathPrefix}${arrVideos[i].data}${ytImagePathSufix}">
-      <span class="gallery__item__span">${arrVideos[i].name}</span>
-    </div>`
-        }
-
-        // Add event listeners
-
-        gallery.addEventListener('click', (e) => {
-            // When click on .gallery__item element
-            if (e.target.classList.contains('gallery__item')) {
-                currentVideo.src = `${ytVideoPrefix}${e.target.getAttribute('data')}`
-            }
-            // When click on .gallery__item__img element
-            if (e.target.classList.contains('gallery__item__img')) {
-                let data = e.target.src
-                data = data.replace(ytImagePathPrefix, '')
-                data = data.replace(ytImagePathSufix, '')
-                currentVideo.src = `${ytVideoPrefix}${data}`
-            }
-            // When click on .gallery__item__span element
-            if (e.target.classList.contains('gallery__item__span')) {
-                console.log(e.target.innerText)
-                for (let i = 0; i < arrVideos.length; i++) {
-                    if (arrVideos[i].name === e.target.innerText) {
-                        currentVideo.src = `${ytVideoPrefix}${arrVideos[i].data}`
-                    }
-                }
-            }
-        })
-    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-
-
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>

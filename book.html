@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/flaticon.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
 
 
     <style>
@@ -123,7 +123,8 @@
 
         @media (max-width: 990px) {
             .book-container img {
-                min-width: 80%;
+                min-width: 100%;
+                height: 100%;
                 margin: auto;
                 margin-bottom: 2em;
             }
@@ -147,6 +148,17 @@
             }
         }
 
+        @media (max-width: 991px) {
+            .book-section {
+                display: flex;
+                justify-content: flex-end;
+                margin: 8rem 0 7em 0;
+                background-color: rgb(20, 21, 182);
+                min-height: 250px;
+                position: relative;
+            }
+        }
+
         @media (max-width: 730px) {
             .book-container img {
                 min-width: 100%;
@@ -158,6 +170,12 @@
         }
 
         @media (max-width: 540px) {
+                        .book-section {
+
+                margin: 2rem 0 5em 0;
+
+
+            }
             .book-image {
 
                 left: -12em;
@@ -165,7 +183,7 @@
             }
 
             .book-container img {
-           height: 50%;
+                height: 50%;
             }
 
         }
@@ -252,7 +270,7 @@
 
 
 
-    <section class="continer book-section" style="margin-top: 11em;">
+    <section class="continer book-section" style="">
         <img class="book-image" src="./Book.png" alt="" srcset="">
         <div class="book-text">
             <!-- <img style=" width: 25em; left: 20em; top: 25em;" id="background-snowflake" src="./Symbol.png" alt="" srcset=""> -->
@@ -527,14 +545,16 @@
                             </ul>
                         </div>
                         <ul class="ftco-footer-social list-unstyled mt-2">
-                            <li class="ftco-animate"><a href="https://twitter.com/MShah222"><i
-                                        class="fab fa-twitter-square"></i></a></i></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.facebook.com/manoj.shah.3576"><i
-                                        class="fab fa-facebook-square"></i></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/dr-manoj-shah-b2571b26/"><i
-                                        class="fab fa-linkedin"></i></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.instagram.com/manojshah222/"><i
-                                        class="fab fa-instagram"></i></span></a></li>
+                            <li class="ftco-animate"><a href="https://twitter.com/MShah222" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a></i></span></a>
+                            </li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/manoj.shah.3576" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/dr-manoj-shah-b2571b26/"
+                                    target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></span></a>
+                            </li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/manojshah222/" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-instagram"></i></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -543,10 +563,10 @@
                 <div class="col-md-12 text-center">
 
                     <p>
-                       
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;
                         <script>document.write(new Date().getFullYear());</script> All rights reserved
-                 
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
             </div>
