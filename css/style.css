@@ -11950,6 +11950,8 @@ h5,
 	height: 265px;
 	width: 374px;
 	margin: auto;
+	    touch-action: auto;
+    -ms-touch-action: auto;
 }
 .testimony-wrap .user-img {
 	width: 80px;
