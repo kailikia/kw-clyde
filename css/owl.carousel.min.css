@@ -19,6 +19,12 @@
 	touch-action: manipulation;
 	-moz-backface-visibility: hidden;
 }
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y !important;
+    touch-action: pan-y !important;
+}
+
 .owl-carousel .owl-stage:after {
 	content: ".";
 	display: block;
