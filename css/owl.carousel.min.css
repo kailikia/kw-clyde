@@ -91,14 +91,17 @@
 .owl-carousel.owl-refresh .owl-item {
 	visibility: hidden;
 }
-.owl-carousel.owl-drag .owl-item {
+
+/* ___________________________________preventing user scroll_________________________________________________________________________ */
+/* .owl-carousel.owl-drag .owl-item {
 	-ms-touch-action: none;
 	touch-action: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
+} */
+/* ____________________________________________________________________________________________________________ */
 .owl-carousel.owl-grab {
 	cursor: move;
 	cursor: grab;

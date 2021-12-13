@@ -215,76 +215,379 @@
 	margin-left: 35px;
 } */
 	</style>
+<style>
+	        .a-new {
+            background: transparent;
+            border: none;
+            color: white;
+            align-items: center;
+        }
+
+        .a-new:hover {
+            color: #017bff;
+        }
+
+        .a-new:focus {
+            color: #017bff;
+            outline: none;
+        }
+
+
+        [class*="container__"] {
+            display: block;
+            position: relative;
+            display: flex;
+        }
+
+        [class*="content__"] {
+            display: none;
+            position: absolute;
+            z-index: 10
+        }
+
+        .home_new,
+        #btnMenu {
+            position: relative;
+            float: left;
+
+        }
+
+        .btnList {
+            font-size: 14px;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            font-weight: 600;
+            opacity: 1 !important;
+            text-transform: uppercase;
+        }
+
+        #btnMenu,
+        .fa-close,
+        .acc {
+            display: none;
+        }
+
+        .content__list:before,
+        h2:before,
+        h2:after {
+            content: "";
+            display: block;
+            position: absolute
+        }
+
+
+        #sticky_nav {
+            background: rgb(52, 74, 193);
+            width: 100%;
+            top: -45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align:justify;
+            position: fixed;
+            z-index: 999;
+            transition: all .5s ease;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+		            .content__list a {
+						color: white;
+						display: block;
+							padding:1em 1em;
+						border-bottom: 2px solid blue;
+			}
+
+
+        .content__list {
+            background: #fff;
+            width: 250px;
+            top: 45px
+        }
+
+        .content__list.left,
+        .content__list.left:before {
+            left: 0
+        }
+
+        .content__list.center {
+            left: -65px;
+        }
+
+        .content__list.center:before {
+            left: 50%;
+            transform: translate(-50%, 0)
+        }
+
+        .content__list.right,
+        .content__list.right:before {
+            right: 0
+        }
+
+
+
+
+
+        @media (max-width:683px) {
+            #btnMenu {
+                display: block;
+                display: block;
+                /* width: 4em; */
+                /* padding: 1em; */
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 40px;
+				color: white;
+
+            }
+            
+        .btnList {
+   color: black;
+   /* font-size: 100px; */
+        }
+
+            
+            .container__menu {
+                display: none
+            }
+
+            .container__list {
+                width: 100%
+            }
+
+            .btnList {
+                width: 100%;
+                box-shadow: 0 2px 2px -2px #333
+            }
+
+            .drop {
+                display: none
+            }
+
+            .acc {
+                display: inline-block;
+                color: black;
+
+            }
+
+            .hover {
+                display: none;
+            }
+
+            .content__list {
+                width: 100%;
+                top: 0;
+                position: relative;
+                /* float: left */
+            }
+
+            .content__list.left,
+            .content__list.center,
+            .content__list.right {
+                left: 0;
+                right: 0
+            }
+
+            .content__list.left:before,
+            .content__list.center:before,
+            .content__list.right:before {
+                left: 50%;
+                transform: translate(-50%, 0)
+            }
+
+            .show_menu {
+                background: white;
+                /* background: white; */
+                width: 100%;
+                top: 86px;
+                display: block;
+                position: absolute;
+                text-align: center;
+
+            }
+        }
+
+
+
+
+
+        @keyframes buble {
+            from {
+                transform: rotate(45deg) translate(-50%, 0) scale(.8, .8)
+            }
+
+            to {
+                transform: rotate(45deg) translate(-50%, 0) scale(1, 1)
+            }
+        }
+
+        .blank {
+            background: #262626
+        }
+
+        .visible {
+            display: inline-block
+        }
+
+        .hidden {
+            display: none
+        }
+
+        [class*="show"] {
+            display: block
+        }
+
+        .show_list {
+            padding: 20px 0;
+            animation: height 1s ease;
+            background-color: rgb(52, 74, 193);
+
+        }
+
+        @keyframes height {
+            from {
+                padding: 0;
+                opacity: 0
+            }
+
+            to {
+                padding: 20px 0;
+                opacity: 1
+            }
+        }
+
+
+        @keyframes width {
+            from {
+                width: 0;
+                opacity: 0
+            }
+
+            to {
+                width: 150px;
+                opacity: 1
+            }
+        }
+</style>
+		<script>
+			window.onscroll = function () {
+				scrollFunction()
+			}
+			function scrollFunction() {
+				var sn = document.getElementById("sticky_nav");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					sn.style.top = "0"
+				}
+				else {
+					sn.style.top = "-45px"
+				}
+			}
+
+
+			function openList(x) {
+				var cL = document.getElementsByClassName("content__list");
+				var i;
+				for (i = 0; i < cL.length; i++) {
+					var OcL = cL[i];
+					if (cL[i] != document.getElementById("thisList_" + x)) {
+						OcL.classList.remove("show_list")
+					}
+				}
+				document.getElementById("thisList_" + x).classList.toggle("show_list")
+			}
+
+
+			function openMenu() {
+				document.getElementById("thisMenu").classList.toggle("show_menu");
+				// document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
+				document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+			}
+		</script>
+
 
 </head>
 
 <body id="home_page" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target ftco-animate"
-		id="ftco-navbar">
-		<div class="container" style=" min-height : 100% ; min-width: 100%;">
-
-			<a class="navbar-brand" href="./index.html"><img style="margin-left: 10px; height: 80px;" src="./Symbol.png"
-					alt="" srcset=""></a>
-			<button style="	color: black !important; font-weight: 700;"
-				class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li s class="nav-item"><a href="./index.html" class="nav-link"><span>Home</span></a></li>
-
-					<li class="nav-item"><a class="nav-link" href="#">About</a>
-						<ul class="color">
-							<li><a href="./about.html"> Professional </a></li>
-							<li><a href="./lions.html">Philanthropy</a></li>
-
-
-					</li>
-				</ul>
-				<!-- <li class="nav-item"><a href="./affiliations.html" class="nav-link"><span>Affiliations</span></a>
-					</li> -->
-				<li class="nav-item"><a class="nav-link" href="#">Affiliations</a>
-					<ul class="color">
-						<li><a href="./kingsway.html">Kingsway Group</a></li>
-						<li><a href="./mpShah.html">M.P Shah Hospital</a></li>
-						<li><a href="./lions.html">Lions SightFirst Eye Hospital</a></li>
-						<li><a href="./stJones.html">ST.Johns</a>
-						<li><a href="./AAKenya.html">AA Kenya</a>
-						<li><a href="./kilimanjaroTrust.html">Kilimanjaro Blind Trust</a>
-						<li><a href="./specialOlympics.html">Special Olympics</a>
-						<li><a href="./others.html">Others..</a>
-
-						</li>
-					</ul>
-				</li>
-
-
-				<li class="nav-item"><a class="nav-link" href="#">Book</a>
-					<ul class="color">
-						<li><a href="./book.html">One In A Million</a></li>
-						<li><a href="./author.html">About the author</a></li>
-					</ul>
-
-				</li>
-				<li class="nav-item"><a class="nav-link" href="#">Media</a>
-					<ul class="color">
-						<li><a href="./gallery.html">Gallery</a></li>
-						<li><a href="./videos.html">Videos</a></li>
-						<li><a href="./currents.html">What's happening</a></li>
-					</ul>
-
-				</li>
-
-
-				<li class="nav-item"><a href="./contact.html" class="nav-link"><span>Contact</span></a></li>
-
-				</ul>
-			</div>
+	<nav id="sticky_nav">
+		<div class="container__left">
+			<a class="navbar-brand" href="./index.html"><img style="margin-left: 10px; height: 80px;"
+					src="./Oneinmillionlogo_dark.png" alt="" srcset=""></a>
+	
 		</div>
+		<button id="btnMenu" onclick="openMenu()">
+			<i class="fa fa-bars"></i>
+			<i class="fa fa-close"></i>
+		</button>
+		<div class="container__menu" id="thisMenu">
+			<div class="container__list">
+	
+				<button onclick="window.location.href='./index.html'" class="btnList a-new">home</button>
+	
+			</div>
+			<div class="">
+				<button class="btnList a-new" onclick="openList('1') ">
+					ABOUT+
+	
+				</button>
+				<div class="content__list left" id="thisList_1">
+					<a href="./about.html"> Professional </a>
+					<a href="./lions.html">Philanthropy</a>
+				</div>
+			</div>
+			<div class="container__list ">
+				<button class="btnList a-new" onclick="openList('2')">
+					Affiliations+
+	
+				</button>
+				<div class="btnList content__list left" id="thisList_2">
+					<a href="./kingsway.html">Kingsway Group</a>
+					<a href="./mpShah.html">M.P Shah Hospital</a>
+					<a href="./lions.html">Lions SightFirst Eye Hospital</a>
+					<a href="./stJones.html">ST.Johns</a>
+					<a href="./AAKenya.html">AA Kenya</a>
+					<a href="./kilimanjaroTrust.html">Kilimanjaro Blind Trust</a>
+					<a href="./specialOlympics.html">Special Olympics</a>
+					<a href="./others.html">Others..</a>
+				</div>
+			</div>
+	
+			<div class="container__list">
+				<button class="btnList a-new" onclick="openList('3') ">
+					BOOK+
+	
+				</button>
+				<div class="content__list left" id="thisList_3">
+					<a href="./book.html">One In A Million</a>
+					<a href="./author.html">About the author</a>
+				</div>
+			</div>
+			<div class="container__list">
+				<button class="btnList btnList a-new" onclick="openList('4') ">
+					MEDIA+
+	
+				</button>
+				<div class="content__list left" id="thisList_4">
+					<a href="./gallery.html">Gallery</a>
+					<a href="./videos.html">Videos</a>
+					<a href="./currents.html">What's happening</a>
+	
+				</div>
+			</div>
+			<div class="container__list">
+	
+				<button onclick="window.location.href='./contact.html'" class="btnList a-new">Contact</button>
+	
+			</div>
+	
+	
+	
+		</div>
+	
 	</nav>
 
 
@@ -297,7 +600,7 @@
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 						<div class="one-third order-md-last img"
-							style="background-image:url(./Sliders/Book.png); background-size: cover; background-repeat: no-repeat; ">
+							style="background-image:url(./Sliders/Book.png);  background-repeat: no-repeat; ">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
@@ -326,7 +629,7 @@
 						data-scrollax-parent="true">
 
 						<div class="one-third new-res remove-slider-item order-md-last img"
-							style="background-image:url(./Sliders/Quote\ 1.png); background-size: cover; background-repeat: no-repeat; border-left-width: 900px; ">
+							style="background-image:url(./Sliders/Quote\ 1.png);  background-repeat: no-repeat; border-left-width: 900px; ">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
@@ -344,7 +647,7 @@
 						data-scrollax-parent="true">
 
 						<div class="one-third new-res remove-slider-item order-md-last img"
-							style="background-image:url(./Sliders/Quote\ 2.png); background-size: cover; background-repeat: no-repeat; border-left-width: 900px; ">
+							style="background-image:url(./Sliders/Quote\ 2.png);  background-repeat: no-repeat; border-left-width: 900px; ">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
@@ -362,7 +665,7 @@
 						data-scrollax-parent="true">
 
 						<div class="one-third new-res remove-slider-item order-md-last img"
-							style="background-image:url(./Sliders/Tribute.png); background-size: cover; background-repeat: no-repeat; border-left-width: 900px; ">
+							style="background-image:url(./Sliders/Tribute.png); background-repeat: no-repeat; border-left-width: 900px; ">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
@@ -738,7 +1041,6 @@
 
 
 
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
@@ -754,7 +1056,7 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
 	<script src="js/google-map.js"></script>
 
-	<script src="js/main.js"></script>
+	<script  src="js/main.js"></script>
 
 </body>
 
