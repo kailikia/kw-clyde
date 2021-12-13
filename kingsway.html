@@ -98,77 +98,134 @@
             width: 6em;
         }
     </style>
+    <!--  -->
 
+
+<script>
+    window.onscroll = function () {
+        scrollFunction()
+    }
+    function scrollFunction() {
+        var sn = document.getElementById("sticky_nav");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            // sn.style.top = "0"
+
+            sn.style.backgroundColor = "rgb(52, 74, 193)"
+            sn.style.padding = ".5em"
+            sn.style.opacity = ".96"
+        }
+        else {
+            // sn.style.top = "-2px"
+            sn.style.backgroundColor = "transparent"
+
+            sn.style.padding = ".5em"
+            sn.style.opacity = "1"
+        }
+    }
+
+
+    function openList(x) {
+        var cL = document.getElementsByClassName("content__list");
+        var i;
+        for (i = 0; i < cL.length; i++) {
+            var OcL = cL[i];
+            if (cL[i] != document.getElementById("thisList_" + x)) {
+                OcL.classList.remove("show_list")
+            }
+        }
+        document.getElementById("thisList_" + x).classList.toggle("show_list")
+    }
+
+
+    function openMenu() {
+        document.getElementById("thisMenu").classList.toggle("show_menu");
+        // document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
+        document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+    }
+</script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
-        id="ftco-navbar">
-        <div class="container" style=" min-height : 100% ; min-width: 100%;">
-
-            <a class="navbar-brand" href="./index.html"><img style="margin-left: 10px; height: 80px;" src="./Symbol.png"
-                    alt="" srcset=""></a>
-            <button style="	color: black !important; font-weight: 700;"
-                class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-            </button>
-
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li s class="nav-item"><a href="./index.html" class="nav-link"><span>Home</span></a></li>
-
-                    <li class="nav-item"><a class="nav-link" href="#">About</a>
-                        <ul class="color">
-                                <li><a href="./about.html"> Professional </a></li>
-                                <li><a href="./lions.html">Philanthropy</a></li>
-
-
-                    </li>
-                </ul>
-                <!-- <li class="nav-item"><a href="./affiliations.html" class="nav-link"><span>Affiliations</span></a>
-    					</li> -->
-                <li class="nav-item"><a class="nav-link" href="#">Affiliations</a>
-                    <ul class="color">
-                        <li><a href="./kingsway.html">Kingsway Group</a></li>
-                        <li><a href="./mpShah.html">M.P Shah Hospital</a></li>
-                        <li><a href="./lions.html">Lions SightFirst Eye Hospital</a></li>
-                        <li><a href="./stJones.html">ST.Johns</a>
-                        <li><a href="./AAKenya.html">AA Kenya</a>
-                        <li><a href="./kilimanjaroTrust.html">Kilimanjaro Blind Trust</a>
-                        <li><a href="./specialOlympics.html">Special Olympics</a>
-                                                    <li><a href="./others.html">Others..</a>
-
-                        </li>
-                    </ul>
-                </li>
-
-
-                <li class="nav-item"><a class="nav-link" href="#">Book</a>
-                    <ul class="color">
-                        <li><a href="./book.html">One In A Million</a></li>
-                        <li><a href="./author.html">About the author</a></li>
-                    </ul>
-
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Media</a>
-                    <ul class="color">
-                        <li><a href="./gallery.html">Gallery</a></li>
-                        <li><a href="./videos.html">Videos</a></li>
-                        <li><a href="./currents.html">What's happening</a></li>
-                    </ul>
-
-                </li>
-
-
-                <li class="nav-item"><a href="./contact.html" class="nav-link"><span>Contact</span></a></li>
-
-                </ul>
-            </div>
+    <nav id="sticky_nav">
+        <div class="container__left">
+            <a class="navbar-brand" href="./index.html"><img style="margin-left: 10px; height: 80px;"
+                    src="./Oneinmillionlogo_dark.png" alt="" srcset=""></a>
+    
         </div>
+        <button id="btnMenu" onclick="openMenu()">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-close"></i>
+        </button>
+        <div class="container__menu" id="thisMenu">
+            <div class="container__list">
+    
+                <button onclick="window.location.href='./index.html'" class="btnList a-new">home</button>
+    
+            </div>
+            <div class="">
+                <button class="btnList a-new" onclick="openList('1') ">
+                    ABOUT+
+    
+                </button>
+                <div class="content__list left" id="thisList_1">
+                    <a href="./about.html"> Professional </a>
+                    <a href="./lions.html">Philanthropy</a>
+                </div>
+            </div>
+            <div class="container__list ">
+                <button class="btnList a-new" onclick="openList('2')">
+                    Affiliations+
+    
+                </button>
+                <div class="btnList content__list left" id="thisList_2">
+                    <a href="./kingsway.html">Kingsway Group</a>
+                    <a href="./mpShah.html">M.P Shah Hospital</a>
+                    <a href="./lions.html">Lions SightFirst Eye Hospital</a>
+                    <a href="./stJones.html">ST.Johns</a>
+                    <a href="./AAKenya.html">AA Kenya</a>
+                    <a href="./kilimanjaroTrust.html">Kilimanjaro Blind Trust</a>
+                    <a href="./specialOlympics.html">Special Olympics</a>
+                    <a href="./others.html">Others..</a>
+                </div>
+            </div>
+    
+            <div class="container__list">
+                <button class="btnList a-new" onclick="openList('3') ">
+                    BOOK+
+    
+                </button>
+                <div class="content__list left" id="thisList_3">
+                    <a href="./book.html">One In A Million</a>
+                    <a href="./author.html">About the author</a>
+                </div>
+            </div>
+            <div class="container__list">
+                <button class="btnList btnList a-new" onclick="openList('4') ">
+                    MEDIA+
+    
+                </button>
+                <div class="content__list left" id="thisList_4">
+                    <a href="./gallery.html">Gallery</a>
+                    <a href="./videos.html">Videos</a>
+                    <a href="./currents.html">What's happening</a>
+    
+                </div>
+            </div>
+            <div class="container__list">
+    
+                <button onclick="window.location.href='./contact.html'" class="btnList a-new">Contact</button>
+    
+            </div>
+    
+    
+    
+        </div>
+    
     </nav>
+
+
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('./img/Headers/Kingsway.jpg');">
 
@@ -244,11 +301,9 @@
     </div>
 
 
-    <section class="ftco-section testimony-section bg-primary-new">
+    <section class=" testimony-section bg-primary-new">
         <div class="container">
-            <div class="row justify-content-center pb-5">
 
-            </div>
             <div class="row ftco-animate">
                 <div class="col-md-12">
                     <div class="carousel-testimony owl-carousel">
@@ -258,7 +313,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="text">
 
-                                    <p class="mb-4 pl-5">
+                                    <p class="mb-4 ">
                                         <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
                                     </p>
 
@@ -271,7 +326,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="text">
 
-                                    <p class="mb-4 pl-5">
+                                    <p class="mb-4 ">
                                         <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
                                     </p>
 
@@ -284,7 +339,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="text">
 
-                                    <p class="mb-4 pl-5">
+                                    <p class="mb-4 ">
                                         <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
 
                                     </p>
@@ -297,7 +352,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="text">
 
-                                    <p class="mb-4 pl-5">
+                                    <p class="mb-4 ">
                                         <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
 
                                     </p>
@@ -310,7 +365,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="text">
 
-                                    <p class="mb-4 pl-5">
+                                    <p class="mb-4 ">
                                         <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
                                     </p>
 
@@ -322,7 +377,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="text">
 
-                                    <p class="mb-4 pl-5">
+                                    <p class="mb-4 ">
                                         <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
 
                                     </p>
@@ -334,7 +389,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="text">
 
-                                    <p class="mb-4 pl-5">
+                                    <p class="mb-4 ">
                                         <img class="img" src="./img/Affliations Logos/Kingsway.png" alt="" srcset="">
 
                                     </p>

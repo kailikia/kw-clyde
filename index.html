@@ -181,7 +181,7 @@
 
 				.image-div img {
 
-					margin-left: -90px;
+					margin-left: -85px;
 					/* max-height: 39.5%; */
 				}
 			}
@@ -215,6 +215,7 @@
 	margin-left: 35px;
 } */
 	</style>
+	
 <style>
 	        .a-new {
             background: transparent;
@@ -236,7 +237,7 @@
         [class*="container__"] {
             display: block;
             position: relative;
-            display: flex;
+            display: inherit;
         }
 
         [class*="content__"] {
@@ -259,7 +260,7 @@
             padding-left: 20px;
             padding-right: 20px;
             color: white;
-            font-weight: 600;
+            font-weight: 500;
             opacity: 1 !important;
             text-transform: uppercase;
         }
@@ -282,7 +283,7 @@
         #sticky_nav {
             background: rgb(52, 74, 193);
             width: 100%;
-            top: -45px;
+            top: 0px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -296,8 +297,8 @@
 		            .content__list a {
 						color: white;
 						display: block;
-							padding:1em 1em;
-						border-bottom: 2px solid blue;
+							padding:10px 1em;
+						border-bottom: 1px solid blue;
 			}
 
 
@@ -360,7 +361,8 @@
 
             .btnList {
                 width: 100%;
-                box-shadow: 0 2px 2px -2px #333
+                box-shadow: 0 2px 2px -2px rgb(52, 74, 193);
+				padding: 1.2em 1em;
             }
 
             .drop {
@@ -441,20 +443,20 @@
         }
 
         .show_list {
-            padding: 20px 0;
-            animation: height 1s ease;
+            padding:  0;
+            animation: height .5s ease;
             background-color: rgb(52, 74, 193);
 
         }
 
         @keyframes height {
             from {
-                padding: 0;
+                /* padding: 0; */
                 opacity: 0
             }
 
             to {
-                padding: 20px 0;
+                /* padding: 20px 0; */
                 opacity: 1
             }
         }
@@ -472,40 +474,48 @@
             }
         }
 </style>
-		<script>
-			window.onscroll = function () {
-				scrollFunction()
-			}
-			function scrollFunction() {
-				var sn = document.getElementById("sticky_nav");
-				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-					sn.style.top = "0"
-				}
-				else {
-					sn.style.top = "-45px"
-				}
-			}
+<script>
+	window.onscroll = function () {
+		scrollFunction()
+	}
+	function scrollFunction() {
+		var sn = document.getElementById("sticky_nav");
+		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			// sn.style.top = "0"
+
+			sn.style.backgroundColor = "rgb(52, 74, 193)"
+			sn.style.padding = ".5em"
+			sn.style.opacity = ".96"
+		}
+		else {
+			// sn.style.top = "-2px"
+			sn.style.backgroundColor = "transparent"
+			
+			sn.style.padding = ".5em"
+			sn.style.opacity = "1"
+		}
+	}
 
 
-			function openList(x) {
-				var cL = document.getElementsByClassName("content__list");
-				var i;
-				for (i = 0; i < cL.length; i++) {
-					var OcL = cL[i];
-					if (cL[i] != document.getElementById("thisList_" + x)) {
-						OcL.classList.remove("show_list")
-					}
-				}
-				document.getElementById("thisList_" + x).classList.toggle("show_list")
+	function openList(x) {
+		var cL = document.getElementsByClassName("content__list");
+		var i;
+		for (i = 0; i < cL.length; i++) {
+			var OcL = cL[i];
+			if (cL[i] != document.getElementById("thisList_" + x)) {
+				OcL.classList.remove("show_list")
 			}
+		}
+		document.getElementById("thisList_" + x).classList.toggle("show_list")
+	}
 
 
-			function openMenu() {
-				document.getElementById("thisMenu").classList.toggle("show_menu");
-				// document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
-				document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
-			}
-		</script>
+	function openMenu() {
+		document.getElementById("thisMenu").classList.toggle("show_menu");
+		// document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
+		document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+	}
+</script>
 
 
 </head>
@@ -592,11 +602,11 @@
 
 
 	
-	<section id="home-section" class="hero ftco-animate" style="height: 1000px; ">
+	<section id="home-section" class="hero ftco-animate" style="height: 1000px;">
 		<div class="home-slider owl-carousel">
 			<div class="slider-item">
 				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
+				<div class=" px-md-0">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 						<div class="one-third order-md-last img"
@@ -624,7 +634,7 @@
 			<!-- </div id="removesmall">  -->
 			<div class="slider-item ">
 				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
+				<div class=" px-md-0">
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 
@@ -642,7 +652,7 @@
 			</div>
 			<div class="slider-item ">
 				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
+				<div class=" px-md-0">
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 
@@ -660,7 +670,7 @@
 			</div>
 			<div class="slider-item ">
 				<div class="overlay"></div>
-				<div class="container-fluid px-md-0">
+				<div class=" px-md-0">
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 
